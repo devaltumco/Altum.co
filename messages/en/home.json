@@ -1,0 +1,152 @@
+{
+  "Herot": {
+    "hero": {
+      "title": {
+        "line1": "We Implement AI That Drives",
+        "line2": "Real Results Across the Americas"
+      },
+      "subtitle": "Artificial precision, human judgment. From Canada to Patagonia, we help companies transform their operations, innovate, and lead their sectors with artificial intelligence.",
+      "cta": "Schedule a Free Consultation",
+      "secondary_cta": "Explore Solutions"
+    },
+    "map": {
+      "canada": "Canada",
+      "mexico": "Mexico",
+      "centralAmerica": "Central America",
+      "colombia": "Colombia",
+      "latam": "Latin America"
+    },
+    "countries": {
+      "mexico": "Mexico",
+      "colombia": "Colombia",
+      "canada": "Canada",
+      "latam": "LATAM",
+      "central_america": "Central America"
+    },
+    "solutions": {
+      "title": "Our AI Implementation Solutions",
+      "description": "We offer a comprehensive suite of services to take your company from raw data to decisive outcomes, covering the entire AI value chain.",
+      "ml": { "title": "Machine Learning", "description": "Predictive models that optimize decision-making." },
+      "automation": { "title": "Intelligent Automation", "description": "Smart bots to streamline your operations." },
+      "vision": { "title": "Computer Vision", "description": "AI that sees and understands the world." },
+      "nlp": { "title": "NLP", "description": "Systems that interpret and generate human language." },
+      "gen_ai": { "title": "Generative AI", "description": "Creativity and content driven by AI." },
+      "analytics": { "title": "Data Analytics", "description": "Turning your data into actionable insights." },
+      "cloud_ai": { "title": "Cloud + AI", "description": "Scalable infrastructure for your AI." },
+      "low_code": { "title": "Low-code AI", "description": "Accelerating your AI implementation." }
+    },
+    "industries": {
+      "title": "Industries We Transform",
+      "description": "We specialize in deploying tailored AI solutions across diverse sectors, driving efficiency and innovation where it matters most.",
+      "finance": "Banking & Finance",
+      "retail": "Retail & E-commerce",
+      "manufacturing": "Manufacturing",
+      "healthcare": "Healthcare & Wellness",
+      "education": "Education",
+      "logistics": "Logistics & Travel",
+      "legal": "Legal Services",
+      "real_estate": "Real Estate",
+      "energy": "Energy",
+      "agribusiness": "Agribusiness"
+    },
+    "caseStudies": {
+      "title": "Real Results, Measurable Impact",
+      "description": "Discover how we have helped companies like yours innovate and grow with applied Artificial Intelligence.",
+      "filterIndustry": "Filter by industry",
+      "filterCountry": "Filter by country",
+      "allIndustries": "All Industries",
+      "allCountries": "All Countries",
+      "noResults": "No success cases match your current filters.",
+      "studies": [
+        { 
+          "title": "AI Credit Scoring for Mexican Fintech", 
+          "summary": "We developed a machine learning model that reduced default rates and increased credit approvals.",
+          "results": [
+            { "value": "30%", "label": "reduction in credit delinquency." },
+            { "value": "20%", "label": "increase in market reach." }
+          ]
+        },
+        { 
+          "title": "Hospital Management Optimization in Colombia", 
+          "summary": "Implementation of a patient flow prediction system to optimize resources and wait times.",
+          "results": [
+            { "value": "40%", "label": "reduction in patient wait times." },
+            { "value": "15%", "label": "improvement in bed occupancy efficiency." }
+          ]
+        },
+        { 
+          "title": "E-commerce Experience Personalization in Canada", 
+          "summary": "Real-time recommendation engine that increased average order value and customer loyalty.",
+          "results": [
+            { "value": "25%", "label": "increase in average order value." },
+            { "value": "18%", "label": "growth in customer retention rate." }
+          ]
+        },
+        { 
+          "title": "Predictive Maintenance for LATAM Manufacturing", 
+          "summary": "IoT and AI-powered system to predict machinery failure, avoiding costly production downtime.",
+          "results": [
+            { "value": "70%", "label": "reduction in unplanned downtime." },
+            { "value": "20%", "label": "decrease in maintenance costs." }
+          ]
+        },
+        { 
+          "title": "Electrical Grid Optimization in Colombia", 
+          "summary": "AI model to predict energy demand and optimize distribution, resulting in a more stable grid.",
+          "results": [
+            { "value": "95%", "label": "accuracy in demand forecasting." },
+            { "value": "10%", "label": "reduction in energy losses." }
+          ]
+        },
+        { 
+          "title": "Smart Agriculture in Central America", 
+          "summary": "Computer vision solution for early pest detection in coffee plantations, improving crop yield.",
+          "results": [
+            { "value": "30%", "label": "increase in crop yield." },
+            { "value": "90%", "label": "accuracy in pest detection." }
+          ]
+        }
+      ]
+    },
+    "partners": {
+    "title": "Our Technology Partners",
+    "description": "We work with the world's leading technology platforms to ensure our solutions are robust, scalable, and state-of-the-art."
+  },
+  "responsible_ai": {
+  "title": "Responsible AI & Governance",
+  "description": "Our commitment is to develop ethical and transparent AI. We build systems that are not only powerful, but also fair, explainable, and accountable.",
+  "principle1": {
+    "title": "Fairness and Equity",
+    "description": "We actively mitigate biases to ensure equitable outcomes for all users."
+  },
+  "principle2": {
+    "title": "Transparency and Explainability",
+    "description": "We create models whose decisions can be understood and audited."
+  },
+  "principle3": {
+    "title": "Security and Accountability",
+    "description": "We design robust systems and establish clear lines of accountability."
+  }
+   },
+   "blog": {
+  "title": "Insights & Resources",
+  "description": "Explore our analysis on the latest AI trends, tutorials, and success stories in our resource center.",
+  "readMore": "Read More",
+  "viewAll": "View All Articles",
+  "posts": {
+    "1": {
+      "title": "From Data to Decision: A Practical Guide to Business Analytics",
+      "excerpt": "Learn the key steps to implement a data culture and turn your information into a strategic asset."
+    },
+    "2": {
+      "title": "Cloud & AI: The Perfect Duo for Scalable Innovation",
+      "excerpt": "Discover the benefits of combining the power of the cloud with AI intelligence to accelerate your projects."
+    },
+    "3": {
+      "title": "Post 3 Title",
+      "excerpt": "Short description for the third article."
+    }
+  }
+}
+  }
+}

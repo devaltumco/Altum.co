@@ -1,0 +1,54 @@
+{
+  "HomePage": {
+  "title": "Welcome",
+  "description": "This is the home page."
+  },
+   "Metadata": {
+  "title": "Altum | Web Development and Digital Solutions",
+  "description": "We create modern websites, online stores, augmented reality applications and custom systems, free QR codes, web pages and landing pages. Specialists in web development with more than 5 years of experience.",
+  "keywords": "modern websites, online stores, augmented reality experiences, free QR codes, landing pages, web development, digital solutions worldwide"
+  },
+  "Index": {
+    "boilerplateName": "Zipaquira Digital",
+    "aboutas": "About As",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "succes": "Success Stories",
+    "careers": "Careers",
+    "blog": "Blog",
+    "searchPlaceholder": "Search industries...",
+    "industriesTitle": "Industry Suggestions",
+    "noResults": "No industries found.",
+    "close": "Close",
+    "view": "View"
+  },
+  "languageSwitcher": {
+    "selectLanguageHeading": "Select Language",
+    "englishFullName": "English",
+    "spanishFullName": "Spanish"
+  },
+  "Footer": {
+    "tagline": "Artificial precision, human judgment.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "solutions": "Solutions",
+      "industries": "Industries",
+      "cases": "Success Cases",
+      "blog": "Blog",
+      "careers": "Careers"
+    },
+    "offices": {
+      "title": "Our Offices",
+      "toronto": "123 Yonge St, ON, Canada",
+      "mexico": "Av. Reforma 456, CDMX, Mexico",
+      "bogota": "Cra. 11 #82-01, Bogota, Colombia"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

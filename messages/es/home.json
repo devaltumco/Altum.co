@@ -1,0 +1,152 @@
+{
+  "Herot": {
+    "hero": {
+      "title": {
+        "line1": "Implementamos IA que genera",
+        "line2": "Resultados Reales en América"
+      },
+      "subtitle": "Precisión artificial, criterio humano. Desde Canadá hasta la Patagonia, ayudamos a empresas a transformar sus operaciones, innovar y ser líderes en su sector con inteligencia artificial.",
+      "cta": "Agenda una Consulta Gratuita",
+      "secondary_cta": "Explorar Soluciones"
+    },
+    "map": {
+      "canada": "Canadá",
+      "mexico": "México",
+      "centralAmerica": "Centroamérica",
+      "colombia": "Colombia",
+      "latam": "Latinoamérica"
+    },
+    "countries": {
+      "mexico": "México",
+      "colombia": "Colombia",
+      "canada": "Canadá",
+      "latam": "LATAM",
+      "central_america": "Centroamérica"
+    },
+    "solutions": {
+      "title": "Nuestras Soluciones de Implementación IA",
+      "description": "Ofrecemos una suite completa de servicios para llevar a su empresa del dato al resultado decisivo, cubriendo toda la cadena de valor de la IA.",
+      "ml": { "title": "Machine Learning", "description": "Modelos predictivos que optimizan decisiones." },
+      "automation": { "title": "Automatización Inteligente", "description": "Bots que agilizan tus operaciones." },
+      "vision": { "title": "Computer Vision", "description": "IA que ve y entiende el mundo." },
+      "nlp": { "title": "PLN", "description": "Sistemas que interpretan y generan lenguaje." },
+      "gen_ai": { "title": "IA Generativa", "description": "Creatividad y contenido impulsado por IA." },
+      "analytics": { "title": "Data Analytics", "description": "Convertimos tus datos en insights de valor." },
+      "cloud_ai": { "title": "Cloud + IA", "description": "Infraestructura escalable para tu IA." },
+      "low_code": { "title": "Low-code IA", "description": "Aceleramos la implementación de tu IA." }
+    },
+    "industries": {
+      "title": "Industrias que Transformamos",
+      "description": "Nos especializamos en el despliegue de soluciones de IA a medida en diversos sectores, impulsando la eficiencia y la innovación donde más importa.",
+      "finance": "Banca y Finanzas",
+      "retail": "Retail y E-commerce",
+      "manufacturing": "Manufactura",
+      "healthcare": "Salud y Bienestar",
+      "education": "Educación",
+      "logistics": "Logística y Viajes",
+      "legal": "Servicios Legales",
+      "real_estate": "Bienes Raíces",
+      "energy": "Energía",
+      "agribusiness": "Agroindustria"
+    },
+    "caseStudies": {
+      "title": "Resultados Reales, Impacto Medible",
+      "description": "Descubre cómo hemos ayudado a empresas como la tuya a innovar y crecer con Inteligencia Artificial aplicada.",
+      "filterIndustry": "Filtrar por industria",
+      "filterCountry": "Filtrar por país",
+      "allIndustries": "Todas las Industrias",
+      "allCountries": "Todos los Países",
+      "noResults": "Ningún caso de éxito coincide con tus filtros actuales.",
+      "studies": [
+        { 
+          "title": "Scoring de Crédito con IA para Fintech Mexicana", 
+          "summary": "Desarrollamos un modelo de machine learning que redujo las tasas de impago.",
+          "results": [
+            { "value": "30%", "label": "de reducción en la mora de créditos." },
+            { "value": "20%", "label": "de aumento en el alcance de mercado." }
+          ]
+        },
+        { 
+          "title": "Optimización de Gestión Hospitalaria en Colombia", 
+          "summary": "Implementación de un sistema de predicción de flujo de pacientes.",
+          "results": [
+            { "value": "40%", "label": "de reducción en tiempos de espera." },
+            { "value": "15%", "label": "de mejora en la eficiencia de camas." }
+          ]
+        },
+        { 
+          "title": "Personalización de E-commerce en Canadá", 
+          "summary": "Motor de recomendación en tiempo real que aumentó la fidelidad.",
+          "results": [
+            { "value": "25%", "label": "de incremento en el valor de orden." },
+            { "value": "18%", "label": "de crecimiento en la retención." }
+          ]
+        },
+        { 
+          "title": "Mantenimiento Predictivo en Manufactura LATAM", 
+          "summary": "Sistema para predecir fallas en maquinaria usando sensores IoT.",
+          "results": [
+            { "value": "70%", "label": "de reducción en inactividad." },
+            { "value": "20%", "label": "de ahorro en mantenimiento." }
+          ]
+        },
+        { 
+          "title": "Optimización de la Red Eléctrica en Colombia", 
+          "summary": "Modelo de IA para predecir la demanda energética y optimizar la red.",
+          "results": [
+            { "value": "95%", "label": "de precisión en la predicción." },
+            { "value": "10%", "label": "de reducción en pérdidas." }
+          ]
+        },
+        { 
+          "title": "Agricultura Inteligente en Centroamérica", 
+          "summary": "Detección temprana de plagas en cafetales mediante visión artificial.",
+          "results": [
+            { "value": "30%", "label": "de aumento en el rendimiento." },
+            { "value": "90%", "label": "de precisión en detección." }
+          ]
+        }
+      ]
+    },
+    "partners": {
+    "title": "Nuestros Socios Tecnológicos",
+    "description": "Trabajamos con las plataformas tecnológicas líderes en el mundo para asegurar que nuestras soluciones sean robustas, escalables y de vanguardia."
+  },
+  "responsible_ai": {
+  "title": "IA Responsable y Gobernanza",
+  "description": "Nuestro compromiso es desarrollar IA ética y transparente. Construimos sistemas que no solo son poderosos, sino también justos, explicables y responsables.",
+  "principle1": {
+    "title": "Justicia y Equidad",
+    "description": "Mitigamos activamente los sesgos para asegurar resultados equitativos para todos los usuarios."
+  },
+  "principle2": {
+    "title": "Transparencia y Explicabilidad",
+    "description": "Creamos modelos cuyas decisiones pueden ser entendidas y auditadas."
+  },
+  "principle3": {
+    "title": "Seguridad y Responsabilidad",
+    "description": "Diseñamos sistemas robustos y establecemos líneas claras de responsabilidad."
+   }
+  },
+  "blog": {
+  "title": "Análisis y Recursos",
+  "description": "Explora nuestros análisis sobre las últimas tendencias en IA, tutoriales y casos de éxito en nuestro centro de recursos.",
+  "readMore": "Leer Más",
+  "viewAll": "Ver Todos los Artículos",
+  "posts": {
+    "1": {
+      "title": "Del Dato a la Decisión: Guía Práctica de Analítica de Negocios",
+      "excerpt": "Aprende los pasos clave para implementar una cultura de datos y convertir tu información en un activo estratégico."
+    },
+    "2": {
+      "title": "Cloud & IA: El Dúo Perfecto para la Innovación Escalable",
+      "excerpt": "Descubre los beneficios de combinar el poder de la nube con la inteligencia de la IA para acelerar tus proyectos."
+    },
+    "3": {
+      "title": "Título del Post 3",
+      "excerpt": "Descripción corta del tercer artículo para rellenar el espacio."
+    }
+  }
+}
+  }
+}

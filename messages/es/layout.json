@@ -1,0 +1,54 @@
+{
+  "HomePage": {
+    "title": "Bienvenido",
+    "description": "Esta es la página de inicio."
+  },
+  "Metadata": {
+    "title": "Altum | Desarrollo Web y Soluciones Digitales",
+    "description": "Creamos sitios web modernos, tiendas en línea, aplicaciones de realidad aumentada y sistemas a medida, códigos QR gratuitos, páginas web y landing pages. Especialistas en desarrollo web con más de 5 años de experiencia.",
+    "keywords": "sitios web modernos, tiendas en línea, experiencias de realidad aumentada, códigos QR gratuitos, landing pages, desarrollo web, soluciones digitales a nivel mundial"
+  },
+  "Index": {
+    "boilerplateName": "Zipaquirá Digital",
+    "aboutas": "Sobre Nosotros",
+    "solutions": "Soluciones",
+    "industries": "Industrias",
+    "succes": "Casos de Éxito",
+    "careers": "Carreras",
+    "blog": "Blog",
+    "searchPlaceholder": "Buscar industrias...",
+    "industriesTitle": "Sugerencias de Industrias",
+    "noResults": "No se encontraron industrias.",
+    "close": "Cerrar",
+    "view": "Ver"
+  },
+  "languageSwitcher": {
+    "selectLanguageHeading": "Seleccionar Idioma",
+    "englishFullName": "Inglés",
+    "spanishFullName": "Español"
+  },
+  "Footer": {
+    "tagline": "Precisión artificial, criterio humano.",
+    "quickLinks": {
+      "title": "Enlaces Rápidos",
+      "about": "Sobre Nosotros",
+      "solutions": "Soluciones",
+      "industries": "Industrias",
+      "cases": "Casos de Éxito",
+      "blog": "Blog",
+      "careers": "Carreras"
+    },
+    "offices": {
+      "title": "Nuestras Oficinas",
+      "toronto": "123 Yonge St, ON, Canadá",
+      "mexico": "Av. Reforma 456, CDMX, México",
+      "bogota": "Cra. 11 #82-01, Bogotá, Colombia"
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "copyright": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos del Servicio"
+  }
+}
