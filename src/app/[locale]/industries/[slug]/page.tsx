@@ -3,28 +3,47 @@ import { notFound } from "next/navigation";
 import { getLocale } from "next-intl/server";
 import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight } from "lucide-react";
 
-// ✅ CORRECCIÓN: Definimos params como una Promise
+// ✅ Definimos params como una Promise que incluye tanto el slug como el locale
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ 
+    slug: string; 
+    locale: string; 
+  }>;
+}
+
+/**
+ * Esta función es CRUCIAL para Cloudflare Pages y el SEO.
+ * Genera todas las combinaciones posibles de idioma y slug durante el build.
+ */
+export async function generateStaticParams() {
+  const locales = ['en', 'es'];
+  
+  return industries.flatMap((industry) => 
+    locales.map((locale) => ({
+      locale: locale,
+      slug: industry.slug[locale as 'en' | 'es'],
+    }))
+  );
 }
 
 export default async function IndustryPage({ params }: PageProps) {
-  // Ahora el await funciona correctamente con el tipo definido
-  const { slug } = await params;
-  const locale = (await getLocale()) as "en" | "es";
+  // Obtenemos los parámetros de la promesa
+  const { slug, locale } = await params;
   
-  // Busca la industria por slug en cualquiera de los dos idiomas
+  // Buscamos la industria comparando el slug en ambos idiomas
   const industry = industries.find(
     (i) => i.slug.en === slug || i.slug.es === slug
   );
 
+  // Si no existe, error 404
   if (!industry) notFound();
 
   const isEs = locale === 'es';
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
-      {/* El resto de tu código se mantiene igual... */}
+      
+      {/* 1. HERO SECTION */}
       <section className="relative pt-32 pb-20 px-6 border-b border-white/5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent opacity-50" />
         <div className="max-w-6xl mx-auto relative z-10">
@@ -32,7 +51,7 @@ export default async function IndustryPage({ params }: PageProps) {
             {isEs ? 'Soluciones por Industria' : 'Industry Solutions'}
           </span>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
-            {industry.name[locale]}
+            {industry.name[locale as 'en' | 'es']}
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
             {isEs 
@@ -50,7 +69,9 @@ export default async function IndustryPage({ params }: PageProps) {
             {[1, 2, 3].map((i) => (
               <div key={i} className="p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-emerald-500/30 transition-colors group">
                 <CheckCircle2 className="text-emerald-500 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold mb-2">Feature {i}</h3>
+                <h3 className="text-xl font-bold mb-2">
+                  {isEs ? `Capacidad ${i}` : `Feature ${i}`}
+                </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   {isEs ? 'Optimización de procesos mediante modelos predictivos personalizados.' : 'Process optimization through custom predictive models.'}
                 </p>
@@ -73,7 +94,9 @@ export default async function IndustryPage({ params }: PageProps) {
             <div className="w-12 h-12 rounded-full bg-emerald-500/20" />
             <div className="text-left">
               <p className="font-bold">CTO, Leading Corp</p>
-              <p className="text-xs text-gray-500 uppercase tracking-widest">{industry.name[locale]}</p>
+              <p className="text-xs text-gray-500 uppercase tracking-widest">
+                {industry.name[locale as 'en' | 'es']}
+              </p>
             </div>
           </div>
         </div>
