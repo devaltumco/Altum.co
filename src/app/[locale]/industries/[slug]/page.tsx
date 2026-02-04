@@ -3,7 +3,13 @@ import { notFound } from "next/navigation";
 import { getLocale } from "next-intl/server";
 import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight } from "lucide-react";
 
-export default async function IndustryPage({ params }: { params: { slug: string } }) {
+// ✅ CORRECCIÓN: Definimos params como una Promise
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function IndustryPage({ params }: PageProps) {
+  // Ahora el await funciona correctamente con el tipo definido
   const { slug } = await params;
   const locale = (await getLocale()) as "en" | "es";
   
@@ -18,8 +24,7 @@ export default async function IndustryPage({ params }: { params: { slug: string 
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
-      
-      {/* 1. HERO SECTION */}
+      {/* El resto de tu código se mantiene igual... */}
       <section className="relative pt-32 pb-20 px-6 border-b border-white/5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent opacity-50" />
         <div className="max-w-6xl mx-auto relative z-10">
@@ -112,7 +117,6 @@ export default async function IndustryPage({ params }: { params: { slug: string 
           </div>
         </div>
       </section>
-
     </main>
   );
 }

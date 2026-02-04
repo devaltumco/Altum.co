@@ -3,7 +3,7 @@ import { getLocale, getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { Metadata, Viewport } from 'next';
 
-import ClientWrapper from '@/pages/ClientWrapper';
+import ClientWrapper from '@/components/ClientWrapper';
 
 import { Space_Grotesk, Pacifico } from 'next/font/google';
 import '../globals.css';

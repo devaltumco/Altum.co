@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    image: "/images/blog1.jpg", 
+    image: "/images/imge.jpg", 
     authorKey: "Elena Vórtice",
     date: "2024-07-15",
     titleKey: "posts.1.title",    // ✅ Antes: "blog.posts.1.title"
@@ -18,7 +18,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    image: "/images/blog2.jpg",
+    image: "/images/imge.jpg",
     authorKey: "Dr. Aris Thorne",
     date: "2024-07-10",
     titleKey: "posts.2.title",
@@ -27,7 +27,7 @@ const blogPosts = [
   },
   {
     id: 3,
-    image: "/images/blog3.jpg",
+    image: "/images/imge.jpg",
     authorKey: "Sofía Reyes",
     date: "2024-07-01",
     titleKey: "posts.3.title",
