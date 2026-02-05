@@ -4,6 +4,8 @@ import { getTranslations, getLocale } from 'next-intl/server';
 import { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import HomeIndex from '@/components/pages/HomeIndex';
+export const runtime = 'edge';
+
 
 export default async function HomePage() {
   const locale = await getLocale();

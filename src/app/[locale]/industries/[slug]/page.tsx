@@ -1,6 +1,5 @@
 import { industries } from "@/lib/data/industrias";
 import { notFound } from "next/navigation";
-import { getLocale } from "next-intl/server";
 import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight } from "lucide-react";
 
 // ✅ Definimos params como una Promise que incluye tanto el slug como el locale
@@ -12,8 +11,14 @@ interface PageProps {
 }
 
 /**
- * Esta función es CRUCIAL para Cloudflare Pages y el SEO.
- * Genera todas las combinaciones posibles de idioma y slug durante el build.
+ * ✅ FUERZA LA GENERACIÓN ESTÁTICA
+ * Al poner esto en false, obligamos a Next.js a generar físicamente 
+ * las carpetas /en/ y /es/ durante el build para Cloudflare.
+ */
+export const dynamicParams = false;
+
+/**
+ * Esta función genera todas las combinaciones posibles de idioma y slug.
  */
 export async function generateStaticParams() {
   const locales = ['en', 'es'];
