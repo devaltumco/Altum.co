@@ -7,9 +7,10 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-"preview": "npm run build && npx wrangler pages dev .vercel/output --compatibility-flag nodejs_compat"
+    "preview": "npm run build && npx wrangler pages dev .vercel/output --compatibility-flag nodejs_compat"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "frame": "^1.0.0-alpha.2",
     "framer-motion": "^12.31.0",
     "lucide-react": "^0.562.0",
@@ -17,7 +18,9 @@
     "next-intl": "^4.4.0",
     "next-themes": "^0.4.6",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-hook-form": "^7.71.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/node": "^20",

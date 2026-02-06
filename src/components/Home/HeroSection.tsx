@@ -11,10 +11,9 @@ export default function HeroSection() {
 
   return (
     <div 
-      className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10 mb-32"
-      suppressHydrationWarning={true} // 🛡️ Esto evita que discrepancias aquí rompan a "Solutions"
-    >
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10 md:mb-32"
+      >
+      <div className="grid lg:grid-cols-2 gap-5 md:gap-16 items-center">
         
         {/* LADO IZQUIERDO: Contenido */}
         <motion.div 

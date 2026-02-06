@@ -45,7 +45,7 @@ const LanguageSwitcher = () => {
       <button
         onClick={() => changeLanguage("es")}
         className={`px-1 py-1 transition-colors duration-200 uppercase ${
-          locale === "es" ? "text-emerald-400 border-b-[1.5px] border-emerald-400" : "text-gray-500 hover:text-white"
+          locale === "es" ? "text-altum-aqua border-b-[1.5px] border-altum-aqua" : "text-gray-500 hover:text-white"
         }`}
       >
         ES
@@ -54,7 +54,7 @@ const LanguageSwitcher = () => {
       <button
         onClick={() => changeLanguage("en")}
         className={`px-1 py-1 transition-colors duration-200 uppercase ${
-          locale === "en" ? "text-emerald-400 border-b-[1.5px] border-emerald-400" : "text-gray-500 hover:text-white"
+          locale === "en" ? "text-altum-aqua border-b-[1.5px] border-altum-aqua" : "text-gray-500 hover:text-white"
         }`}
       >
         EN

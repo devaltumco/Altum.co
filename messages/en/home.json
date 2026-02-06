@@ -147,6 +147,62 @@
       "excerpt": "Short description for the third article."
     }
   }
-}
+},
+"Index": {
+    "careers": {
+      "title": "Join Our Team",
+      "description": "We are looking for passionate and talented individuals to help us build the future of AI in the Americas. Discover a culture of innovation, continuous learning, and impact.",
+      "openPositions": "Open Positions",
+      "applyNow": "Apply Now"
+    },
+    "benefits": {
+      "remote": {
+        "title": "Remote Culture",
+        "description": "Work from anywhere in the Americas with a flexible and results-oriented culture."
+      },
+      "impact": {
+        "title": "Positive Impact",
+        "description": "Your work will directly help transform industries and improve people's lives."
+      },
+      "growth": {
+        "title": "Continuous Growth",
+        "description": "Access to training, certifications, and a personalized professional development plan."
+      }
+    },
+    "jobs": {
+      "seniorAi": {
+        "title": "Senior AI/ML Engineer",
+        "description": "Design and implement advanced machine learning models for our enterprise clients in various industries."
+      },
+      "solutionsArchitect": {
+        "title": "AI Solutions Architect",
+        "description": "Lead the technical design of AI solutions, translating business needs into robust and scalable architectures."
+      }
+    }
+  },
+  "contact": {
+    "title": "Ready to Transform Your Business?",
+    "description": "Let's talk. Schedule a free, no-obligation consultation with our AI experts to explore how we can help you achieve your goals.",
+    "labels": {
+      "name": "Full Name",
+      "email": "Work Email",
+      "company": "Company (Optional)",
+      "message": "How can we help you?"
+    },
+    "placeholders": {
+      "name": "e.g., Jane Doe",
+      "email": "you@company.com",
+      "company": "Your Company Inc.",
+      "message": "Tell us about your project..."
+    },
+    "errors": {
+      "name": "Name is too short",
+      "email": "Invalid email",
+      "message": "Message must be longer"
+    },
+    "submitBtn": "Schedule Consultation",
+    "successMsg": "Message sent successfully!",
+    "errorMsg": "There was an error sending. Please try again."
+  }
   }
 }

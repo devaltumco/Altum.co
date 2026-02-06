@@ -3,17 +3,21 @@
 "use client";
 
 import { useState, useMemo, useEffect } from 'react';
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
+// ✅ Link configurado para manejar idiomas automáticamente
+import { Link } from "@/app/i18n/navigation";
 import { caseStudies } from "@/lib/data/case-studies";
 import { industriesList, countriesList } from "@/lib/data/industries-data-case";
+// ✅ Importamos la data de industrias para cruzar los slugs
+import { industries } from "@/lib/data/industrias";
 import { Check, ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 
 export default function CaseStudies() {
   const t = useTranslations("Herot.caseStudies");
   const tRoot = useTranslations("Herot");
+  const locale = useLocale() as "en" | "es";
 
   // --- Estados ---
   const [industryFilter, setIndustryFilter] = useState('all');
@@ -97,8 +101,8 @@ export default function CaseStudies() {
                     onChange={(e) => setIndustryFilter(e.target.value)}
                     className={`w-full appearance-none bg-[#0a0a0a]/80 border text-white rounded-xl px-5 py-3 pr-10 outline-none transition-all cursor-pointer 
                         ${industryFilter !== 'all' 
-                            ? 'border-altum-aqua shadow-[0_0_10px_rgba(45,212,191,0.2)]' // Estilo si está seleccionado
-                            : 'border-white/10 focus:border-altum-aqua' // Estilo por defecto + focus
+                            ? 'border-altum-aqua shadow-[0_0_10px_rgba(45,212,191,0.2)]' 
+                            : 'border-white/10 focus:border-altum-aqua' 
                         }
                     `}
                 >
@@ -126,8 +130,8 @@ export default function CaseStudies() {
                     onChange={(e) => setCountryFilter(e.target.value)}
                     className={`w-full appearance-none bg-[#0a0a0a]/80 border text-white rounded-xl px-5 py-3 pr-10 outline-none transition-all cursor-pointer 
                         ${countryFilter !== 'all' 
-                            ? 'border-altum-aqua shadow-[0_0_10px_rgba(45,212,191,0.2)]' // Estilo si está seleccionado
-                            : 'border-white/10 focus:border-altum-aqua' // Estilo por defecto + focus
+                            ? 'border-altum-aqua shadow-[0_0_10px_rgba(45,212,191,0.2)]' 
+                            : 'border-white/10 focus:border-altum-aqua' 
                         }
                     `}
                 >
@@ -152,7 +156,6 @@ export default function CaseStudies() {
         {/* --- Carousel Area --- */}
         <div className="relative w-full max-w-[1400px] mx-auto group/carousel">
             
-            {/* Contenedor relativo para posicionar flechas */}
             <div className="relative flex items-center">
                 
                 {/* --- Flecha Izquierda --- */}
@@ -161,14 +164,10 @@ export default function CaseStudies() {
                     disabled={isFirst}
                     className={`
                         absolute z-30 flex items-center justify-center rounded-full border border-white/10 backdrop-blur-md transition-all duration-300
-                        /* MÓVIL */
                         left-2 w-10 h-10 bg-black/60 text-white
-                        /* DESKTOP */
                         md:-left-12 md:w-12 md:h-12 md:bg-altum-violeta/10 md:hover:bg-altum-violeta
-                        
-                        /* VISIBILIDAD */
                         ${isFirst 
-                            ? 'opacity-50 cursor-not-allowed bg-black/40 text-gray-400' 
+                            ? 'opacity-0 cursor-not-allowed invisible' 
                             : 'opacity-100 cursor-pointer shadow-lg hover:scale-110'}
                     `}
                     aria-label="Anterior"
@@ -180,21 +179,32 @@ export default function CaseStudies() {
                 <div className="overflow-hidden w-full px-0 md:px-0"> 
                     <motion.div 
                         className="flex"
-                        // Solo animamos la posición X del contenedor. Las tarjetas dentro son estáticas.
                         animate={{ x: `-${currentIndex * (100 / visibleCards)}%` }}
                         transition={{ type: "spring", stiffness: 250, damping: 30 }}
                     >
                         {filteredCaseStudies.length > 0 ? (
-                            filteredCaseStudies.map((study, index) => (
-                                <div // CAMBIO: Usamos div normal en lugar de motion.div para las tarjetas individuales
+                            filteredCaseStudies.map((study, index) => {
+                                // ✅ LÓGICA DE RUTAS: Buscamos el slug traducido en industrias.ts
+                                const caseKey = study.industryKey.split('.')[1];
+                                const industryData = industries.find(ind => ind.key === caseKey);
+                                const targetSlug = industryData?.slug[locale] || study.slug;
+
+                                return (
+                                <div 
                                     key={study.titleKey}
                                     className="flex-shrink-0 px-3 md:px-4"
                                     style={{ width: `${100 / visibleCards}%` }}
                                 >
-                                    <Link href={`/proyectos/${study.slug}`} className="block h-full group select-none">
+                                    <Link 
+                                        href={{
+                                          pathname: '/industries/[slug]',
+                                          params: { slug: targetSlug }
+                                        }}
+                                        className="block h-full group select-none"
+                                    >
                                         <div className="h-full bg-black/30 border border-white/10 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col">
                                             
-                                            {/* --- IMAGEN LIMPIA --- */}
+                                            {/* --- Imagen --- */}
                                             <div className="aspect-video relative w-full bg-white/5 overflow-hidden">
                                                 {study.image && (
                                                     <Image 
@@ -212,7 +222,6 @@ export default function CaseStudies() {
                                             {/* --- Contenido --- */}
                                             <div className="p-6 md:p-8 flex flex-col flex-grow">
                                                 
-                                                {/* Badges */}
                                                 <div className="flex flex-wrap gap-2 mb-4">
                                                     <span className="px-2 py-1 text-[10px] uppercase font-bold tracking-wider bg-altum-violeta/10 text-altum-aqua rounded border border-altum-aqua/20">
                                                         {tRoot(study.industryKey)}
@@ -248,7 +257,8 @@ export default function CaseStudies() {
                                         </div>
                                     </Link>
                                 </div>
-                            ))
+                                );
+                            })
                         ) : (
                             <div className="w-full py-20 text-center text-altum-gris col-span-full italic">
                                 {t('noResults')}
@@ -263,14 +273,10 @@ export default function CaseStudies() {
                     disabled={isLast}
                     className={`
                         absolute z-30 flex items-center justify-center rounded-full border border-white/10 backdrop-blur-md transition-all duration-300
-                        /* MÓVIL */
                         right-2 w-10 h-10 bg-black/60 text-white
-                        /* DESKTOP */
                         md:-right-12 md:w-12 md:h-12 md:bg-altum-violeta/10 md:hover:bg-altum-violeta
-                        
-                        /* VISIBILIDAD */
                         ${isLast 
-                            ? 'opacity-50 cursor-not-allowed bg-black/40 text-gray-400' 
+                            ? 'opacity-0 cursor-not-allowed invisible' 
                             : 'opacity-100 cursor-pointer shadow-lg hover:scale-110'}
                     `}
                     aria-label="Siguiente"

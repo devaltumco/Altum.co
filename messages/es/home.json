@@ -147,6 +147,62 @@
       "excerpt": "Descripción corta del tercer artículo para rellenar el espacio."
     }
   }
-}
+},
+"Index": {
+    "careers": {
+      "title": "Únete a nuestro Equipo",
+      "description": "Buscamos personas apasionadas y talentosas para ayudarnos a construir el futuro de la IA en las Américas. Descubre una cultura de innovación, aprendizaje continuo e impacto.",
+      "openPositions": "Posiciones Abiertas",
+      "applyNow": "Aplicar Ahora"
+    },
+    "benefits": {
+      "remote": {
+        "title": "Cultura Remota",
+        "description": "Trabaja desde cualquier lugar de las Américas con una cultura flexible y orientada a resultados."
+      },
+      "impact": {
+        "title": "Impacto Positivo",
+        "description": "Tu trabajo ayudará directamente a transformar industrias y mejorar la vida de las personas."
+      },
+      "growth": {
+        "title": "Crecimiento Continuo",
+        "description": "Acceso a capacitaciones, certificaciones y un plan de desarrollo profesional personalizado."
+      }
+    },
+    "jobs": {
+      "seniorAi": {
+        "title": "Ingeniero Senior de IA/ML",
+        "description": "Diseña e implementa modelos avanzados de machine learning para nuestros clientes corporativos en diversas industrias."
+      },
+      "solutionsArchitect": {
+        "title": "Arquitecto de Soluciones de IA",
+        "description": "Lidera el diseño técnico de soluciones de IA, traduciendo necesidades de negocio en arquitecturas robustas y escalables."
+      }
+    }
+  },
+  "contact": {
+    "title": "¿Listo para Transformar tu Negocio?",
+    "description": "Hablemos. Agenda una consulta gratuita y sin compromiso con nuestros expertos en IA para explorar cómo podemos ayudarte a alcanzar tus metas.",
+    "labels": {
+      "name": "Nombre Completo",
+      "email": "Email de Trabajo",
+      "company": "Empresa (Opcional)",
+      "message": "¿Cómo podemos ayudarte?"
+    },
+    "placeholders": {
+      "name": "Ej: Ana Pérez",
+      "email": "tu@empresa.com",
+      "company": "Tu Empresa S.A.",
+      "message": "Cuéntanos sobre tu proyecto..."
+    },
+    "errors": {
+      "name": "El nombre es muy corto",
+      "email": "Email inválido",
+      "message": "El mensaje debe ser más largo"
+    },
+    "submitBtn": "Agendar Consulta",
+    "successMsg": "¡Mensaje enviado con éxito!",
+    "errorMsg": "Hubo un error al enviar. Intenta de nuevo."
+  }
   }
 }
