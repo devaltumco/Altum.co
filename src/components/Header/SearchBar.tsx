@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Search, X, ArrowRight } from "lucide-react";
-import { useRouter } from "@/app/i18n/navigation";
+import { useRouter } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { industries, Industry } from "@/lib/data/industrias";

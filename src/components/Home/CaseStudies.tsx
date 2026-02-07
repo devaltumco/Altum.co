@@ -7,7 +7,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 // ✅ Link configurado para manejar idiomas automáticamente
-import { Link } from "@/app/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { caseStudies } from "@/lib/data/case-studies";
 import { industriesList, countriesList } from "@/lib/data/industries-data-case";
 // ✅ Importamos la data de industrias para cruzar los slugs

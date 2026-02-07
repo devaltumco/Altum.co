@@ -1,18 +1,28 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import createMiddleware from 'next-intl/middleware';
-import { routing } from './app/i18n/routing';
-export default createMiddleware(routing);
+import { routing } from './i18n/routing';
+import { NextResponse } from 'next/server';
+
+const handleI18n = createMiddleware({
+  ...routing,
+  defaultLocale: 'es',
+});
+
+export default function middleware(request: any) {
+  const { pathname } = request.nextUrl;
+
+  // 1. FORZAR IGNORAR STUDIO: Si la ruta empieza con /studio, no hagas nada.
+  if (pathname.startsWith('/studio')) {
+    return NextResponse.next();
+  }
+
+  // 2. Si no es studio, aplica la internacionalización normal
+  return handleI18n(request);
+}
 
 export const config = {
+  // Mantenemos el matcher por seguridad, pero el "if" de arriba es el que manda
   matcher: [
-    // 1. Permitir la raíz
-    '/', 
-    
-    // 2. Permitir rutas con prefijo de idioma
-    '/(es|en)/:path*',
-
-    // 3. EXCLUSIÓN DE RECURSOS ESTÁTICOS MEJORADA:
-    // Esta regla ignora explícitamente archivos de sistema y 
-    // cualquier recurso con extensiones (ico, svg, jpg, png, webp, etc.)
-    '/((?!api|_next|_vercel|.*\\..*).*)'
-  ]
+    '/((?!api|_next/static|_next/image|favicon.ico|admin|.*\\..*).*)'
+  ],
 };

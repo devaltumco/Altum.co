@@ -2,7 +2,7 @@
 
 import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Link } from "@/app/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useState } from "react";
 import { useHeaderState, useBodyScrollLock } from "./headerHooks"; 
 import DesktopNav from "./DesktopNav"; 

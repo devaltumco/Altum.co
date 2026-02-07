@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
-import { Link } from "@/app/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { Map } from "@/components/ui/map";
 

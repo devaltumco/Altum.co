@@ -35,8 +35,8 @@ export function Contact() {
     }
   }
 
-  // Clase común para los inputs para evitar repetición
-  const inputClasses = "w-full bg-[#111] border border-white/10 rounded-lg px-4 py-2.5 text-sm outline-none transition-all placeholder:text-gray-600 focus:border-[#3AF2CE] focus:ring-1 focus:ring-[#3AF2CE]/30 autofill:shadow-[0_0_0_30px_#111_inset] autofill:text-fill-white";
+  // Modificado: text-base (16px) para evitar zoom en móvil y clases de autofill corregidas
+  const inputClasses = "w-full bg-[#111] border border-white/10 rounded-lg px-4 py-2.5 text-base md:text-sm text-white outline-none transition-all placeholder:text-gray-600 focus:border-[#3AF2CE] focus:ring-1 focus:ring-[#3AF2CE]/30 [-webkit-text-fill-color:white] [transition:background-color_5000s_ease-in-out_0s]";
 
   return (
     <section className="py-24 bg-[#0a0a0a] text-white">
@@ -62,6 +62,7 @@ export function Contact() {
                     {...register("name")} 
                     placeholder={t('placeholders.name')} 
                     className={inputClasses}
+                    autoComplete="name"
                 />
                 {errors.name && <p className="text-red-400 text-[10px] ml-1">{errors.name.message}</p>}
               </div>
@@ -74,6 +75,7 @@ export function Contact() {
                     {...register("email")} 
                     placeholder={t('placeholders.email')} 
                     className={inputClasses}
+                    autoComplete="email"
                 />
                 {errors.email && <p className="text-red-400 text-[10px] ml-1">{errors.email.message}</p>}
               </div>
@@ -87,6 +89,7 @@ export function Contact() {
                 {...register("company")} 
                 placeholder={t('placeholders.company')} 
                 className={inputClasses}
+                autoComplete="organization"
               />
             </div>
 
@@ -122,6 +125,19 @@ export function Contact() {
           </form>
         </div>
       </div>
+
+      <style jsx global>{`
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus {
+          -webkit-text-fill-color: white !important;
+          -webkit-box-shadow: 0 0 0px 1000px #111 inset !important;
+          transition: background-color 5000s ease-in-out 0s !important;
+        }
+      `}</style>
     </section>
   );
 }

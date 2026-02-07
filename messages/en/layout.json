@@ -1,15 +1,18 @@
 {
-  "HomePage": {
-  "title": "Welcome",
-  "description": "This is the home page."
-  },
+ 
    "Metadata": {
-  "title": "Altum | Web Development and Digital Solutions",
-  "description": "We create modern websites, online stores, augmented reality applications and custom systems, free QR codes, web pages and landing pages. Specialists in web development with more than 5 years of experience.",
-  "keywords": "modern websites, online stores, augmented reality experiences, free QR codes, landing pages, web development, digital solutions worldwide"
-  },
+    "title": "Altum | Software Development & AI Solutions",
+    "description": "Leaders in responsible AI implementation, Machine Learning, and Automation. Transforming industries across Colombia, Mexico, and Canada with cutting-edge technological solutions.",
+    "keywords": "software development, artificial intelligence, machine learning, intelligent automation, responsible AI, data consulting, cloud solutions, modern web development"
+},
+"MetadataBlog": {
+  "title": "Software Development and Artificial Intelligence | Altumai",
+  "description": "Articles on responsible AI implementation, Machine Learning, and Automation. We transform industries in Colombia, Mexico, and Canada with cutting-edge technological solutions.",
+  "keywords": "software development, artificial intelligence, machine learning, intelligent automation, responsible AI, data consulting, cloud solutions, modern web development"
+}
+,
   "Index": {
-    "boilerplateName": "Zipaquira Digital",
+    "boilerplateName": "Altum",
     "aboutas": "About As",
     "solutions": "Solutions",
     "industries": "Industries",

@@ -1,0 +1,17 @@
+{
+  "Blog": {
+    "title": "Blog & News",
+    "subtitle": "Everything about the digital world",
+    "readMore": "Read article",
+    "empty": "No articles published yet."
+  },
+  "Post": {
+    "toc": "Table of Contents",
+    "listen": "Listen to this article",
+    "video": "Video Summary",
+    "writtenBy": "Written by",
+    "share": "Share:",
+    "summarize": "Summarize with:",
+    "prompt": "Please summarize this article: "
+  }
+}

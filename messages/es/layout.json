@@ -1,15 +1,17 @@
 {
-  "HomePage": {
-    "title": "Bienvenido",
-    "description": "Esta es la página de inicio."
-  },
-  "Metadata": {
-    "title": "Altum | Desarrollo Web y Soluciones Digitales",
-    "description": "Creamos sitios web modernos, tiendas en línea, aplicaciones de realidad aumentada y sistemas a medida, códigos QR gratuitos, páginas web y landing pages. Especialistas en desarrollo web con más de 5 años de experiencia.",
-    "keywords": "sitios web modernos, tiendas en línea, experiencias de realidad aumentada, códigos QR gratuitos, landing pages, desarrollo web, soluciones digitales a nivel mundial"
+  
+"Metadata": {
+    "title": "Altumia | Desarrollo de Software e Inteligencia Artificial",
+    "description": "Líderes en implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno"
+},
+"MetadataBlog": {
+    "title": "Desarrollo de Software e Inteligencia Artificial | Altumai",
+    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
   },
   "Index": {
-    "boilerplateName": "Zipaquirá Digital",
+    "boilerplateName": "Altum",
     "aboutas": "Sobre Nosotros",
     "solutions": "Soluciones",
     "industries": "Industrias",

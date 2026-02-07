@@ -37,26 +37,26 @@ export default async function RootLayout({ children }: { children: React.ReactNo
  const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness", 
-    "@id": "https://zipaquiradigital.com/#organization",
-    "name": "Zipaquirá Digital",
-    "url": "https://zipaquiradigital.com",
-    "logo": "https://zipaquiradigital.com/logo.png",
-    "image": "https://zipaquiradigital.com/og-image.jpg",
-    "description": "Agencia de desarrollo web y marketing digital en Zipaquirá y Colombia.",
-    "telephone": "+573195301551", 
+    "@id": "https://altumia.co//#organization",
+    "name": "Altumia",
+    "url": "https://altumia.co/",
+    "logo": "https://altumia.co/logo.png",
+    "image": "https://altumia.co/og-image.jpg",
+    "description": "Empresa de Desarrollo de software e implementación de IA bajo normativa legal con operaciones en Colombia - México - Canadá - El Salvador .",
+    "telephone": "+57 320-740-8391", 
     "priceRange": "$$", 
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Zipaquirá Centro", 
-      "addressLocality": "Zipaquirá",
+      "streetAddress": "calle 98a -61-47, Bogota", 
+      "addressLocality": "Bogota",
       "addressRegion": "Cundinamarca",
       "postalCode": "250252",
       "addressCountry": "CO"
     },
     "geo": { 
       "@type": "GeoCoordinates",
-      "latitude": 5.0226, 
-      "longitude": -74.0016
+      "latitude": 4.68757447913936, 
+      "longitude": -74.06740254175845
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -67,20 +67,20 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         "Thursday",
         "Friday"
       ],
-      "opens": "08:00",
+      "opens": "06:00",
       "closes": "18:00"
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+57-319-530-1551",
+      "telephone": "+57-320-740-8391",
       "contactType": "customer service",
       "areaServed": "CO",
       "availableLanguage": ["es", "en"]
     },
     "sameAs": [
-      "https://www.facebook.com/zipaquiradigital",
-      "https://www.instagram.com/zipaquiradigital",
-      "https://www.linkedin.com/company/zipaquir%C3%A1-digital"
+      "https://www.facebook.com/altumia.co",
+      "https://www.instagram.com/altumia.co",
+      "https://www.linkedin.com/company/altumia-col"
     ]
   };
 
@@ -89,8 +89,11 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
       </head>
 
-      {/* Se corrigió Space_Grotesk.variable por spaceGrotesk.variable y se añadió la clase de fuente por defecto font-sans o la variable directamente */}
-      <body className={`${spaceGrotesk.variable} ${pacifico.variable} font-sans antialiased min-h-screen flex flex-col overflow-x-hidden relative`}>
+      {/* Se añadió suppressHydrationWarning al body para evitar errores por inyección de scripts/atributos del navegador en móvil */}
+      <body 
+        suppressHydrationWarning 
+        className={`${spaceGrotesk.variable} ${pacifico.variable} font-sans antialiased min-h-screen flex flex-col overflow-x-hidden relative`}
+      >
 
         <script
           type="application/ld+json"
@@ -124,18 +127,18 @@ export const viewport: Viewport = {
 // Metadata
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale();
-  const metadataBase = new URL('https://zipaquiradigital.com');
+  const metadataBase = new URL('https://altumia.co');
 
   return {
     metadataBase,
     title: {
-      default: locale === 'es' ? 'Zipaquirá Digital' : 'Zipaquirá Digital | English',
-      template: '%s | Zipaquirá Digital',
+      default: locale === 'es' ? 'Altumia | Desarrollo de Software e IA' : 'Altumia | Software Development & AI',
+      template: '%s | Altumia',
     },
     description:
       locale === 'es'
-        ? 'Portal informativo y tecnológico de Zipaquirá, Colombia.'
-        : 'Digital information and tech portal from Zipaquirá, Colombia.',
+        ? 'Empresa de Desarrollo de software e implementación de IA bajo normativa legal con operaciones en Colombia, México, Canadá y El Salvador.'
+        : 'Software development and AI implementation company under legal regulations with operations in Colombia, Mexico, Canada and El Salvador.',
     icons: {
       icon: '/favicon.ico',
     },
