@@ -53,5 +53,17 @@
     "copyright": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "ChatBot": {
+    "welcome": "Hello! How can I help you today?",
+    "liveChat": "Live Chat",
+    "whatsappChat": "Chat via WhatsApp",
+    "back": "Back",
+    "advisorName": "Altumia Advisor",
+    "status": "Online",
+    "placeholder": "Type here...",
+    "emptyState": "Ask me anything about One-Time Payment",
+    "errorMessage": "Connection error",
+"suggestions": [ "Which industries do you automate?", "I want to talk to a human" ]
   }
 }

@@ -4,22 +4,24 @@
 
 @layer base {
   :root {
-    /* Fondo global para Altum IA */
     --background: #0a0a0a; 
-    /* Color de texto base (Gris Altum) para contraste */
     --foreground: #D7D7D7; 
   }
+}
 
-  /* Si llegas a usar modo claro, puedes invertirlo aquí, 
-     pero si quieres negro siempre, deja los mismos valores */
-  .dark {
-    --background: #0a0a0a;
-    --foreground: #D7D7D7;
+@layer utilities {
+  /* Oculta la barra de scroll pero mantiene la funcionalidad en ambos ejes */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }
 
 body {
-  /* Usamos @apply para que Tailwind gestione el color base */
   @apply bg-[#0a0a0a] text-altum-gris antialiased;
   min-height: 100vh;
 }

@@ -52,5 +52,17 @@
     "copyright": "Todos los derechos reservados.",
     "privacy": "Política de Privacidad",
     "terms": "Términos del Servicio"
+  },
+  "ChatBot": {
+    "welcome": "¡Hola! ¿En qué puedo ayudarte hoy?",
+    "liveChat": "Chat en Vivo",
+    "whatsappChat": "Chatear por WhatsApp",
+    "back": "Volver",
+    "advisorName": "Asesor Altumia",
+    "status": "En línea",
+    "placeholder": "Escribe aquí...",
+    "emptyState": "Ask me anything you want about artificial intelligence",
+    "errorMessage": "Error de conexión",
+    "suggestions": [ "¿Qué industrias automatizan?", "Quiero hablar con un humano"]
   }
 }

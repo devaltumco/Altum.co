@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { ReactNode } from 'react';
 import { NextIntlClientProvider, AbstractIntlMessages } from 'next-intl';
+import { ChatBot } from './ChatAltumia';
 
 
 
@@ -22,7 +23,7 @@ export default function ClientWrapper({ children, locale, messages }: Props) {
           <main className="flex-grow w-full relative">
             {children}
           </main> 
-          
+          <ChatBot/>
           <Footer />
           
       </NextIntlClientProvider>
