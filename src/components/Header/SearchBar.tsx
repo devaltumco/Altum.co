@@ -96,16 +96,16 @@ export default function SearchBar() {
         onClick={() => setIsModalOpen(true)}
         className="relative w-full max-w-[280px] cursor-pointer group"
       >
-        <div className="w-full bg-white/5 border border-gray-700/50 rounded-lg py-1.5 pl-9 pr-4 text-[13px] text-gray-500 group-hover:border-emerald-500/30 transition-colors">
+        <div className="w-full bg-white/5 border border-gray-700/50 rounded-lg py-1.5 pl-9 pr-4 text-[13px] text-gray-500 group-hover:border-altum-aqua/30 transition-colors">
           {t("searchPlaceholder") || (locale === 'es' ? "Buscar industrias..." : "Search industries...")}
         </div>
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 group-hover:text-emerald-500/50 transition-colors" />
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-600 group-hover:text-altum-aqua/50 transition-colors" />
       </div>
 
       {/* MODAL DE BÚSQUEDA CENTRADO */}
       <AnimatePresence>
         {isModalOpen && (
-          <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[10vh] px-4">
+          <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[10vh] px-4 overflow-hidden">
             {/* Fondo con desenfoque (Backdrop) */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -124,7 +124,7 @@ export default function SearchBar() {
             >
               {/* Encabezado del Modal con Input */}
               <div className="flex items-center p-4 border-b border-white/10">
-                <Search className="w-5 h-5 text-emerald-500 mr-3" />
+                <Search className="w-5 h-5 text-altum-aqua mr-3" />
                 <input
                   ref={inputRef}
                   type="text"
@@ -142,9 +142,9 @@ export default function SearchBar() {
               </div>
 
               {/* Cuerpo del Modal: Resultados */}
-              <div className="max-h-[60vh] overflow-y-auto p-2">
+              <div className="max-h-[60vh] overflow-y-auto p-2 no-scrollbar">
                 <div className="px-3 py-2">
-                  <span className="text-[10px] font-bold text-emerald-500 tracking-[0.2em] uppercase">
+                  <span className="text-[10px] font-bold text-altum-aqua tracking-[0.2em] uppercase">
                     {locale === 'es' ? 'Sugerencias de Industrias' : 'Industry Suggestions'}
                   </span>
                 </div>
@@ -158,14 +158,14 @@ export default function SearchBar() {
                         className="w-full flex items-center justify-between p-4 rounded-xl hover:bg-white/5 group transition-all border border-transparent hover:border-white/5"
                       >
                         <div className="flex flex-col items-start">
-                          <span className="text-white font-medium group-hover:text-emerald-400 transition-colors">
+                          <span className="text-white font-medium group-hover:text-altum-aqua transition-colors">
                             {industry.name[locale]}
                           </span>
                           <span className="text-[10px] text-gray-500 uppercase tracking-widest mt-1">
                             {industry.slug[locale]}
                           </span>
                         </div>
-                        <ArrowRight className="w-4 h-4 text-gray-700 group-hover:text-emerald-500 transform group-hover:translate-x-1 transition-all" />
+                        <ArrowRight className="w-4 h-4 text-gray-700 group-hover:text-altum-aqua transform group-hover:translate-x-1 transition-all" />
                       </button>
                     ))
                   ) : (

@@ -42,24 +42,22 @@ export default function HeroSection() {
 
           <div className="mt-10 flex flex-wrap gap-5">
             {/* Botón Principal */}
-            <Link 
-              href="/" 
-              className="group relative px-8 py-4 bg-altum-violeta text-white font-medium rounded-lg overflow-hidden transition-all hover:scale-105 active:scale-95"
-            >
-              <div className="relative z-10 flex items-center gap-2">
-                {t('hero.cta')}
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-altum-aqua/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-            </Link>
+         <Link 
+    href="/" 
+    className="group relative w-full sm:w-auto px-6 py-3 bg-[#5D3FD3] text-white text-sm font-medium rounded-lg transition-all hover:scale-105 active:scale-100 shadow-lg shadow-[#5D3FD3]/20 flex items-center justify-center gap-2"
+  >
+    {t('hero.cta')}
+    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+    <div className="absolute inset-0 bg-gradient-to-r from-[#3AF2CE]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+  </Link>
 
-            {/* Botón Secundario */}
-            <Link 
-              href="/" 
-              className="px-8 py-4 border border-altum-aqua/30 text-slate-400 font-medium rounded-lg hover:bg-altum-aqua/10 transition-all hover:border-altum-aqua"
-            >
-              {t('hero.secondary_cta')}
-            </Link>
+  {/* Botón Secundario: Explore Solutions */}
+  <Link 
+    href="/solutions" 
+    className="w-full sm:w-auto px-10 py-3 border border-white/10 text-gray-300 text-sm font-medium rounded-lg hover:bg-white/5 transition-all hover:border-white/20 text-center flex items-center justify-center"
+  >
+    {t('hero.secondary_cta')}
+  </Link>
           </div>
         </motion.div>
 

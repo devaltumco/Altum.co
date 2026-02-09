@@ -92,7 +92,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       {/* Se añadió suppressHydrationWarning al body para evitar errores por inyección de scripts/atributos del navegador en móvil */}
       <body 
         suppressHydrationWarning 
-        className={`${spaceGrotesk.variable} ${pacifico.variable} font-sans antialiased min-h-screen flex flex-col overflow-x-hidden relative`}
+        className={`${spaceGrotesk.variable} ${pacifico.variable} font-sans antialiased min-h-screen flex flex-col overflow-x-hidden no-scrollbar relative`}
       >
 
         <script

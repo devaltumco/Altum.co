@@ -1,8 +1,12 @@
+"use client"; //
+
 import { industries } from "@/lib/data/industrias";
 import { notFound } from "next/navigation";
-import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion"; //
+import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight, Sparkles } from "lucide-react";
+import { useEffect, useState } from "react";
 
-// ✅ Definimos params como una Promise que incluye tanto el slug como el locale
+// ✅ Definimos la interfaz de params correctamente
 interface PageProps {
   params: Promise<{ 
     slug: string; 
@@ -10,119 +14,107 @@ interface PageProps {
   }>;
 }
 
-/**
- * ✅ FUERZA LA GENERACIÓN ESTÁTICA
- * Al poner esto en false, obligamos a Next.js a generar físicamente 
- * las carpetas /en/ y /es/ durante el build para Cloudflare.
- */
-export const dynamicParams = false;
+export default function IndustryPage({ params }: PageProps) {
+  const [data, setData] = useState<{ slug: string; locale: string } | null>(null);
 
-/**
- * Esta función genera todas las combinaciones posibles de idioma y slug.
- */
-export async function generateStaticParams() {
-  const locales = ['en', 'es'];
-  
-  return industries.flatMap((industry) => 
-    locales.map((locale) => ({
-      locale: locale,
-      slug: industry.slug[locale as 'en' | 'es'],
-    }))
-  );
-}
+  // Desenvolvemos los params
+  useEffect(() => {
+    params.then(setData);
+  }, [params]);
 
-export default async function IndustryPage({ params }: PageProps) {
-  // Obtenemos los parámetros de la promesa
-  const { slug, locale } = await params;
-  
-  // Buscamos la industria comparando el slug en ambos idiomas
-  const industry = industries.find(
-    (i) => i.slug.en === slug || i.slug.es === slug
-  );
+  if (!data) return null;
 
-  // Si no existe, error 404
-  if (!industry) notFound();
-
+  const { slug, locale } = data;
+  const lang = locale as 'en' | 'es';
   const isEs = locale === 'es';
+
+  // Buscamos la industria en la data centralizada
+  const industry = industries.find(i => i.slug.en === slug || i.slug.es === slug);
+
+  if (!industry) notFound();
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
       
-      {/* 1. HERO SECTION */}
-      <section className="relative pt-32 pb-20 px-6 border-b border-white/5">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent opacity-50" />
+      {/* 1. HERO SECTION DINÁMICO */}
+      <section className="relative pt-40 pb-24 px-6 border-b border-white/5">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#3AF2CE15,transparent_50%)]" />
         <div className="max-w-6xl mx-auto relative z-10">
-          <span className="text-emerald-400 text-xs font-bold tracking-[0.3em] uppercase mb-4 block">
-            {isEs ? 'Soluciones por Industria' : 'Industry Solutions'}
-          </span>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
-            {industry.name[locale as 'en' | 'es']}
-          </h1>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-            {isEs 
-              ? `Impulsamos el futuro de ${industry.name.es} mediante implementaciones estratégicas de IA y automatización avanzada.`
-              : `Driving the future of ${industry.name.en} through strategic AI implementations and advanced automation.`}
-          </p>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="flex items-center gap-2 text-[#3AF2CE] text-xs font-bold tracking-[0.3em] uppercase mb-6">
+              <Sparkles size={14} />
+              {isEs ? 'Solución Especializada' : 'Specialized Solution'}
+            </span>
+            <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9] bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">
+              {industry.heroTitle[lang]}
+            </h1>
+            <p className="text-gray-400 text-lg md:text-2xl max-w-3xl leading-relaxed">
+              {industry.description[lang]}
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* 2. FEATURES SECTION */}
-      <section className="py-24 px-6 bg-white/[0.01]">
+      {/* 2. CAPACIDADES ESPECÍFICAS (FEATURES) */}
+      <section className="py-32 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12">{isEs ? 'Capacidades Clave' : 'Key Capabilities'}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="p-8 rounded-2xl border border-white/10 bg-white/5 hover:border-emerald-500/30 transition-colors group">
-                <CheckCircle2 className="text-emerald-500 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-xl font-bold mb-2">
-                  {isEs ? `Capacidad ${i}` : `Feature ${i}`}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  {isEs ? 'Optimización de procesos mediante modelos predictivos personalizados.' : 'Process optimization through custom predictive models.'}
-                </p>
+          <h2 className="text-3xl font-bold mb-16 tracking-tight font-sans">
+            {isEs ? 'Capacidades de Implementación' : 'Implementation Capabilities'}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {industry.features.map((feature, idx) => (
+              <div key={idx} className="group relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-[#5D3FD3]/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="relative">
+                  <CheckCircle2 className="text-[#3AF2CE] mb-6" size={32} />
+                  <h3 className="text-2xl font-bold mb-4">{feature.title[lang]}</h3>
+                  <p className="text-gray-500 leading-relaxed text-sm md:text-base">
+                    {feature.description[lang]}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 3. TESTIMONIALS */}
-      <section className="py-24 px-6 border-y border-white/5">
+      {/* 3. TESTIMONIAL SECTORIAL */}
+      <section className="py-32 px-6 bg-[#0d0d0d] border-y border-white/5 font-sans">
         <div className="max-w-4xl mx-auto text-center">
-          <MessageSquare className="w-12 h-12 text-emerald-500/20 mx-auto mb-8" />
-          <blockquote className="text-2xl md:text-3xl font-medium italic text-gray-300 mb-8">
-            {isEs 
-              ? `"La implementación de Altum IA Design cambió por completo nuestra eficiencia operativa en este sector."`
-              : `"Altum IA Design's implementation completely changed our operational efficiency in this sector."`}
+          <MessageSquare className="w-16 h-16 text-[#3AF2CE]/10 mx-auto mb-10" />
+          <blockquote className="text-3xl md:text-5xl font-medium tracking-tight text-gray-200 mb-12 italic">
+            "{industry.testimonial.quote[lang]}"
           </blockquote>
-          <div className="flex items-center justify-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-emerald-500/20" />
+          <div className="inline-flex items-center gap-5 p-2 pr-6 rounded-full border border-white/10 bg-white/5">
+            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#5D3FD3] to-[#3AF2CE]" />
             <div className="text-left">
-              <p className="font-bold">CTO, Leading Corp</p>
-              <p className="text-xs text-gray-500 uppercase tracking-widest">
-                {industry.name[locale as 'en' | 'es']}
+              <p className="font-bold text-lg">{industry.testimonial.author}</p>
+              <p className="text-xs text-[#3AF2CE] font-bold uppercase tracking-widest">
+                {industry.testimonial.role[lang]} — {industry.name[lang]}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4. FAQ SECTION */}
-      <section className="py-24 px-6">
+      {/* 4. FAQ DINÁMICA */}
+      <section className="py-32 px-6 font-sans">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 flex items-center gap-3">
-            <HelpCircle className="text-emerald-500" /> FAQ
+          <h2 className="text-4xl font-bold mb-16 flex items-center gap-4 tracking-tighter">
+            <HelpCircle className="text-[#3AF2CE]" size={32} /> FAQ {industry.key.toUpperCase()}
           </h2>
-          <div className="space-y-6">
-            {[1, 2].map((i) => (
-              <div key={i} className="pb-6 border-b border-white/10">
-                <h4 className="text-lg font-medium mb-2">
-                  {isEs ? '¿Cómo se integra esta solución?' : 'How is this solution integrated?'}
+          <div className="space-y-12">
+            {industry.faq.map((item, idx) => (
+              <div key={idx} className="group">
+                <h4 className="text-xl font-bold mb-4 group-hover:text-[#3AF2CE] transition-colors">
+                  {item.question[lang]}
                 </h4>
-                <p className="text-gray-500 text-sm">
-                  {isEs 
-                    ? 'Nuestra metodología permite una integración fluida con sus sistemas legacy actuales.' 
-                    : 'Our methodology allows a seamless integration with your current legacy systems.'}
+                <p className="text-gray-400 leading-relaxed">
+                  {item.answer[lang]}
                 </p>
               </div>
             ))}
@@ -130,17 +122,17 @@ export default async function IndustryPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* 5. CTA SECTION */}
-      <section className="py-32 px-6">
-        <div className="max-w-6xl mx-auto bg-gradient-to-br from-emerald-600 to-emerald-900 rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden group">
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
+      {/* 5. CTA GLOBAL */}
+      <section className="py-40 px-6 font-sans">
+        <div className="max-w-6xl mx-auto bg-gradient-to-br from-[#5D3FD3] to-[#1a1a1a] rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl shadow-[#5D3FD3]/20">
+          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 mix-blend-overlay" />
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              {isEs ? '¿Listo para innovar?' : 'Ready to innovate?'}
+            <h2 className="text-5xl md:text-7xl font-bold mb-10 tracking-tighter">
+              {isEs ? 'Lidera tu sector con IA' : 'Lead your industry with AI'}
             </h2>
-            <button className="bg-white text-black px-8 py-4 rounded-full font-bold flex items-center gap-2 mx-auto hover:bg-gray-100 transition-all group-hover:scale-105">
+            <button className="bg-[#3AF2CE] text-black px-12 py-5 rounded-full font-bold text-lg flex items-center gap-3 mx-auto hover:scale-105 transition-transform">
               {isEs ? 'Contactar un experto' : 'Contact an expert'}
-              <ArrowRight size={20} />
+              <ArrowRight size={22} />
             </button>
           </div>
         </div>

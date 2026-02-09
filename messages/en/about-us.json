@@ -1,0 +1,29 @@
+{
+  "About": {
+    "title": "Pioneers in Business AI in the Americas",
+    "description": "Founded with the vision of democratizing access to artificial intelligence, Altum IA has become the strategic partner of leading companies across the continent. Our multidisciplinary team combines technical expertise with a deep understanding of the region's business challenges.",
+    "team": {
+      "elena": { "role": "CEO & Co-founder" },
+      "aris": { "role": "CTO & AI Research Leader" },
+      "sofia": { "role": "VP of Sales, Americas" },
+      "mateo": { "role": "General Manager, LATAM" }
+    },
+    "history": {
+      "title": "Our History",
+      "paragraph1": "Our journey began in Colombia in early 2025, with the mission of applying artificial intelligence to solve complex business challenges in the region.",
+      "paragraph2": "Driven by early success, two of our founding partners ventured to explore the North American market, establishing a solid presence in Canada. This strategic move allowed us to expand our brand in the world's second-largest country and bring our innovative solutions to a new and diverse market.",
+      "paragraph3": "Simultaneously, to strengthen our reach throughout Latin America, another of our partners settled in Mexico. From there, we lead our expansion into Mexico and Central America, creating a strategic hub to serve our clients and consolidating our position as leaders in AI implementation across the continent."
+    },
+    "mission_vision": {
+      "title": "Mission and Vision",
+      "vision": {
+        "title": "Our Vision",
+        "text": "To see more productive companies, with an orderly transition implementing AI in their operations."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "text": "To be the allies of companies in the countries where we operate, democratizing the implementation of top-level technology, with standards and under regulation."
+      }
+    }
+  }
+}

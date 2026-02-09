@@ -19,37 +19,37 @@ export default function DesktopNav({ sticky }: { sticky: boolean }) {
         transition={{ duration: 0.6, ease: "easeInOut" }}
       >
         <Link 
-          href="/" 
+          href="/about-us" 
           className={linkStyle}
         >
-          {t("aboutas")}
+          {t("aboutus")}
         </Link>
         
         <Link 
-          href="/" 
+          href="/solutions" 
           className={linkStyle}
         >
           {t("solutions")}
         </Link>
         
         <Link 
-          href="/" 
+          href="/industries-altumia" 
           className={linkStyle}
         >
           {t("industries")}
         </Link>
         <Link 
-          href="/" 
+          href="/success-stories" 
           className={linkStyle}
           >{t("succes")}
         </Link>
          <Link 
-          href="/" 
+          href="/blog" 
           className={linkStyle}
           >{t("blog")}
         </Link>
          <Link 
-          href="/" 
+          href="/careers" 
           className={linkStyle}
           >{t("careers")}
         </Link>

@@ -1,0 +1,29 @@
+{
+  "About": {
+    "title": "Pioneros en IA de Negocios en América",
+    "description": "Fundados con la visión de democratizar el acceso a la inteligencia artificial, Altum IA se ha convertido en el socio estratégico de empresas líderes en el continente. Nuestro equipo multidisciplinario combina experiencia técnica con un profundo entendimiento de los retos de negocio de la región.",
+    "team": {
+      "elena": { "role": "CEO & Co-fundadora" },
+      "aris": { "role": "CTO & Líder de Investigación IA" },
+      "sofia": { "role": "VP de Ventas, Américas" },
+      "mateo": { "role": "Gerente General, LATAM" }
+    },
+    "history": {
+      "title": "Nuestra Historia",
+      "paragraph1": "Nuestra trayectoria comenzó en Colombia a principios de 2025, con la misión de aplicar la inteligencia artificial para resolver desafíos empresariales complejos en la región.",
+      "paragraph2": "Impulsados por el éxito inicial, dos de nuestros socios fundadores se aventuraron a explorar el mercado norteamericano, estableciendo una sólida presencia en Canadá. Esta jugada estratégica nos permitió expandir nuestra marca en el segundo país más grande del mundo y llevar nuestras soluciones innovadoras a un mercado nuevo y diverso.",
+      "paragraph3": "Simultáneamente, para afianzar nuestro alcance en toda Latinoamérica, otro de nuestros socios se radicó en México. Desde allí, lideramos nuestra expansión hacia México y Centroamérica, creando un hub estratégico para atender a nuestros clientes y consolidando nuestra posición como líderes en implementación de IA en todo el continente."
+    },
+    "mission_vision": {
+      "title": "Misión y Visión",
+      "vision": {
+        "title": "Nuestra Visión",
+        "text": "Ver empresas más productivas, con una transición ordenada implementando la IA en sus operaciones."
+      },
+      "mission": {
+        "title": "Nuestra Misión",
+        "text": "Ser los aliados de las empresas en los países que operamos, democratizar la implementación de tecnología de último nivel, con estándares y bajo regulación."
+      }
+    }
+  }
+}

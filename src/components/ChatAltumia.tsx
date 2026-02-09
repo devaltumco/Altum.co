@@ -55,9 +55,9 @@ const MessageContent = ({ text }: { text: string }) => {
               href={match[2]}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 my-2 px-4 py-2 bg-[#3AF2CE]/10 text-[#3AF2CE] border border-[#3AF2CE]/30 rounded-xl hover:bg-[#3AF2CE]/20 transition-all font-bold shadow-[0_0_15px_rgba(58,242,206,0.1)]"
+              className="inline-flex items-center gap-1.5 my-2 px-4 py-2 bg-altum-aqua/10 text-altum-aqua border border-altum-aqua/30 rounded-xl hover:bg-altum-aqua/20 transition-all font-bold shadow-[0_0_15px_rgba(58,242,206,0.1)]"
             >
-              {match[1]} ↗
+              {match[1]} 
             </a>
           );
         }
@@ -225,7 +225,7 @@ export function ChatBot() {
                 <div className="flex-1 overflow-y-auto p-4 space-y-4 no-scrollbar bg-[#0d0d0d]">
                   {messages.length === 0 && (
                     <div className="flex flex-col items-center justify-center h-full text-center space-y-2 opacity-40">
-                      <Bot size={40} className="text-gray-600" />
+                      <Bot size={30} className="text-gray-600" />
                       <p className="text-[11px] text-gray-500 max-w-[150px]">{t('emptyState')}</p>
                     </div>
                   )}
@@ -233,7 +233,7 @@ export function ChatBot() {
                     <div key={message.id} className={`flex items-end gap-2 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
                       {message.role === "assistant" && (
                         <div className="h-7 w-7 rounded-full bg-[#1a1a1a] border border-white/10 flex items-center justify-center flex-shrink-0">
-                             <Bot size={14} className="text-[#3AF2CE]" />
+                             <Bot size={14} className="text-altum-aqua" />
                         </div>
                       )}
                       <div className={`max-w-[85%] p-3 rounded-2xl text-[13px] leading-relaxed overflow-hidden ${message.role === "user" ? "bg-[#5D3FD3] text-white rounded-tr-none shadow-lg shadow-[#5D3FD3]/10" : "bg-[#222] text-gray-200 border border-white/5 rounded-tl-none"}`}>
@@ -252,14 +252,14 @@ export function ChatBot() {
                 {!isLoading && (
                   <div className="px-4 py-2 flex gap-2 overflow-x-auto no-scrollbar border-t border-white/5 bg-[#0a0a0a]">
                     {suggestions.map((suggestion, index) => (
-                      <button key={index} onClick={() => sendMessage(suggestion)} className="whitespace-nowrap px-3 py-1.5 bg-[#1a1a1a] border border-white/10 rounded-full text-[10px] font-medium text-gray-400 hover:text-[#3AF2CE] hover:border-[#3AF2CE]/40 transition-all active:scale-95">{suggestion}</button>
+                      <button key={index} onClick={() => sendMessage(suggestion)} className="whitespace-nowrap px-3 py-1.5 bg-[#1a1a1a] border border-white/10 rounded-full text-[10px] font-medium text-gray-400 hover:text-altum-aqua hover:border-[#3AF2CE]/40 transition-all active:scale-95">{suggestion}</button>
                     ))}
                   </div>
                 )}
                 <div className="border-t border-white/5 p-4 bg-[#111]">
                   <form onSubmit={(e) => { e.preventDefault(); sendMessage(input); }} className="flex gap-2">
                     <input value={input} onChange={(e) => setInput(e.target.value)} placeholder={t('placeholder')} className="flex-1 bg-[#1a1a1a] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-[#5D3FD3]/50 transition-all" disabled={isLoading} />
-                    <button type="submit" disabled={isLoading || !input.trim()} className="bg-[#5D3FD3] hover:bg-[#4c32b3] text-white p-2.5 rounded-xl disabled:opacity-30 disabled:hover:bg-[#5D3FD3] transition-all flex items-center justify-center active:scale-90"><Send size={16} /></button>
+                    <button type="submit" disabled={isLoading || !input.trim()} className="bg-altum-violeta hover:bg-[#4c32b3] text-white p-2.5 rounded-xl disabled:opacity-30 disabled:hover:bg-altum-violeta transition-all flex items-center justify-center active:scale-90"><Send size={16} /></button>
                   </form>
                 </div>
               </div>
@@ -268,12 +268,12 @@ export function ChatBot() {
         )}
       </AnimatePresence>
 
-      <button onClick={toggleContainer} className="fixed bottom-6 right-6 h-14 w-14 sm:h-16 sm:w-16 bg-altum-violeta text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all duration-300 group z-[10000] border border-white/10">
+      <button onClick={toggleContainer} className="fixed bottom-6 right-6 h-10 w-10 sm:h-12 sm:w-12 bg-altum-violeta text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all duration-300 group z-[10000] border border-white/10">
         <AnimatePresence mode="wait">
           {isOpen ? (
-            <motion.div key="close" initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }}><X className="h-7 w-7 sm:h-8 sm:w-8" /></motion.div>
+            <motion.div key="close" initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }}><X className="h-5 w-5 sm:h-5 sm:w-5" /></motion.div>
           ) : (
-            <motion.div key="bot" initial={{ opacity: 0, rotate: 90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: -90 }}><Bot className="h-7 w-7 sm:h-8 sm:w-8" /></motion.div>
+            <motion.div key="bot" initial={{ opacity: 0, rotate: 90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: -90 }}><Bot className="h-7 w-7 sm:h-5 sm:w-5" /></motion.div>
           )}
         </AnimatePresence>
         <div className="absolute inset-0 rounded-full bg-altum-violeta blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-300" />

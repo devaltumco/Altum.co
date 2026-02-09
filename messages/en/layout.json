@@ -9,11 +9,35 @@
   "title": "Software Development and Artificial Intelligence | Altumai",
   "description": "Articles on responsible AI implementation, Machine Learning, and Automation. We transform industries in Colombia, Mexico, and Canada with cutting-edge technological solutions.",
   "keywords": "software development, artificial intelligence, machine learning, intelligent automation, responsible AI, data consulting, cloud solutions, modern web development"
-}
-,
+},
+  "MetadataSolutions": {
+    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
+    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  },
+   "MetadataCareers": {
+    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
+    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  },
+   "MetadataIndustriesAltumia": {
+    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
+    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  },
+   "MetadataSuccessStories": {
+    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
+    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  },
+   "MetadataAboutUs": {
+    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
+    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  },
   "Index": {
     "boilerplateName": "Altum",
-    "aboutas": "About As",
+    "aboutus": "About As",
     "solutions": "Solutions",
     "industries": "Industries",
     "succes": "Success Stories",

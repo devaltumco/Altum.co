@@ -77,13 +77,12 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
 
         <nav className="flex flex-col gap-1">
           {/* Mapeamos las llaves exactas que usas en DesktopNav: home, services, about, contact */}
-          {['aboutas', 'solutions', 'industries', 'succes', 'blog','careers'].map((key, index) => (
+          {['aboutus', 'solutions', 'industries-altumia', 'succes', 'blog','careers'].map((key, index) => (
             <button
               key={`${key}-${index}`}
               onClick={() => handleNavigation(key === 'home' ? '/' : `/${key}`)}
               className="w-full text-left py-4 px-2 text-xl font-medium text-slate-300 hover:text-emerald-400 border-b border-white/5 transition-colors"
             >
-              {/* Esta llamada utiliza tus archivos layout.json de messages */}
               {t(key)}
             </button>
           ))}
