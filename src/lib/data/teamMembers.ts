@@ -33,6 +33,6 @@ export const teamMembers = [
     id: "Alex",
     name: "Alexander Rivera",
     roleKey: "team.alexrivera.role",
-    image: "/images/team/alexander-rivera.jpg"
+    image: "/images/team/alexrivero.jpg"
   }
 ];

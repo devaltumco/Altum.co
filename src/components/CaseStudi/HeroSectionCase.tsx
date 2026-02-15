@@ -44,7 +44,7 @@ export default function CaseStudies() {
   return (
     <section 
         className="py-24 bg-altum-bgsegundary relative overflow-hidden" 
-        suppressHydrationWarning={true}
+     
     >
       <div className="container mx-auto px-4 md:px-12 relative z-10">
         
@@ -122,7 +122,7 @@ export default function CaseStudies() {
 
         {/* --- Grid de Cards (2 en móvil, 3 en desktop) --- */}
         <div className="relative w-full max-w-[1400px] mx-auto">
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-8">
                 {filteredCaseStudies.length > 0 ? (
                     filteredCaseStudies.map((study, index) => {
                         // ✅ LÓGICA DE RUTAS: Buscamos el slug traducido en el industries.ts original

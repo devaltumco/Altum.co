@@ -59,7 +59,7 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
           <div className="flex items-center gap-2">
             {/* Contenedor del Logo */}
             <div className="w-[140px] h-[50px] relative">
-              {/* CORRECCIÓN: Se agrega "/" al inicio de la ruta del src */}
+          <Link className="" href="/">
               <Image 
                 src="/logo_altum.svg" 
                 alt="Altum IA Design Logo" 
@@ -67,6 +67,8 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
                 priority
                 className="object-contain object-left" 
               />
+                        </Link>
+              
             </div>
           </div>
           <button onClick={closeMenu} className="text-white/70 hover:text-white">
@@ -76,7 +78,7 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
 
         <nav className="flex flex-col gap-1">
           {/* Mapeamos las llaves exactas que usas en DesktopNav: home, services, about, contact */}
-          {['aboutus', 'solutions', 'industries-altumia', 'succes', 'blog','careers'].map((key, index) => (
+          {['about-us', 'solutions', 'industries-altumia', 'succes', 'blog','careers'].map((key, index) => (
             <button
               key={`${key}-${index}`}
               onClick={() => handleNavigation(key === 'home' ? '/' : `/${key}`)}

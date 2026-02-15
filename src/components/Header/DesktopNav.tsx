@@ -22,7 +22,7 @@ export default function DesktopNav({ sticky }: { sticky: boolean }) {
           href="/about-us" 
           className={linkStyle}
         >
-          {t("aboutus")}
+          {t("about-us")}
         </Link>
         
         <Link 
