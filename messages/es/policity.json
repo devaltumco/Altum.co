@@ -1,0 +1,188 @@
+{
+  "PrivacyPolicy": {
+    "lastUpdate": "Última actualización: Enero 12, 2026",
+    "sections": {
+      "1": {
+        "title": "1. Introducción",
+        "content": "Altumia (en adelante, “Altumia”, “nosotros” o “la Empresa”), en cumplimiento de la Ley 1581 de 2012, el Decreto 1377 de 2013 y demás normas concordantes sobre protección de datos personales en Colombia, presenta esta Política de Privacidad que describe cómo recopilamos, usamos, almacenamos y protegemos la información personal de nuestros usuarios, clientes y visitantes."
+      },
+      "2": {
+        "title": "2. Responsable del Tratamiento",
+        "content": "Razón Social: Altumia\nSitio Web: altumia.co\nCorreo Electrónico: service@altumia.co\nDomicilio: Bogota, Colombia Barrio los andes"
+      },
+      "3": {
+        "title": "3. Definiciones",
+        "content": "Conforme a la Ley 1581 de 2012:",
+        "items": [
+          "Dato Personal: Cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables.",
+          "Titular: Persona natural cuyos datos personales sean objeto de tratamiento.",
+          "Tratamiento: Cualquier operación o conjunto de operaciones sobre datos personales, tales como recolección, almacenamiento, uso, circulación o supresión.",
+          "Responsable del Tratamiento: Altumia, quien decide sobre la base de datos y el tratamiento de los datos.",
+          "Encargado del Tratamiento: Persona natural o jurídica que realiza el tratamiento por cuenta del responsable.",
+          "Autorización: Consentimiento previo, expreso e informado del Titular para llevar a cabo el tratamiento de datos personales."
+        ]
+      },
+      "4": {
+        "title": "4. Principios para el Tratamiento de Datos Personales",
+        "content": "Altumia se compromete a aplicar los siguientes principios en el tratamiento de datos personales:",
+        "items": [
+          "Legalidad: El tratamiento se realizará conforme a la normativa vigente.",
+          "Finalidad: El tratamiento obedece a una finalidad legítima, informada al Titular.",
+          "Libertad: El tratamiento requiere consentimiento previo, expreso e informado del Titular.",
+          "Veracidad o Calidad: La información debe ser veraz, completa, exacta y actualizada.",
+          "Transparencia: Se garantiza el derecho de información al Titular.",
+          "Acceso y Circulación Restringida: El tratamiento se sujeta a los límites de la autorización.",
+          "Security: Se implementarán medidas técnicas, humanas y administrativas para proteger los datos.",
+          "Confidencialidad: Todas las personas que intervengan en el tratamiento están obligadas a garantizar la confidencialidad."
+        ]
+      },
+      "5": {
+        "title": "5. Datos Personales que Recopilamos",
+        "content": "Altumia puede recopilar las siguientes categorías de datos personales:",
+        "subsections": {
+          "5_1": {
+            "title": "5.1 Datos de Identificación",
+            "items": [
+              "Nombre completo",
+              "Número de identificación (cédula, NIT, pasaporte)",
+              "Fecha de nacimiento",
+              "Fotografía"
+            ]
+          },
+          "5_2": {
+            "title": "5.2 Datos de Contacto",
+            "items": [
+              "Dirección física",
+              "Correo electrónico",
+              "Número de teléfono",
+              "Redes sociales"
+            ]
+          },
+          "5_3": {
+            "title": "5.3 Datos Profesionales y Laborales",
+            "items": [
+              "Cargo",
+              "Empresa",
+              "Información profesional"
+            ]
+          },
+          "5_4": {
+            "title": "5.4 Datos de Navegación",
+            "items": [
+              "Dirección IP",
+              "Tipo de navegador",
+              "Páginas visitadas",
+              "Tiempo de navegación",
+              "Cookies y tecnologías similares"
+            ]
+          },
+          "5_5": {
+            "title": "5.5 Datos Financieros (cuando aplique)",
+            "items": [
+              "Información bancaria para pagos",
+              "Historial de transacciones"
+            ]
+          }
+        }
+      },
+      "6": {
+        "title": "6. Finalidades del Tratamiento",
+        "content": "Los datos personales recopilados serán utilizados para las siguientes finalidades:",
+        "subsections": {
+          "6_1": {
+            "title": "6.1 Finalidades Principales",
+            "items": [
+              "Prestación de servicios tecnológicos contratados",
+              "Gestión de la relación comercial y contractual",
+              "Facturación y gestión de pagos",
+              "Atención de solicitudes, quejas y reclamos",
+              "Cumplimiento de obligaciones legales y contractuales"
+            ]
+          },
+          "6_2": {
+            "title": "6.2 Finalidades Secundarias (requieren autorización específica)",
+            "items": [
+              "Envío de información comercial, publicitaria y promocional",
+              "Realización de estudios de mercado y análisis estadísticos",
+              "Mejora de productos y servicios",
+              "Invitaciones a eventos, webinars y capacitaciones",
+              "Gestión de programas de fidelización"
+            ],
+            "note": "El Titular puede oponerse al tratamiento para finalidades secundarias en cualquier momento."
+          }
+        }
+      },
+      "7": {
+        "title": "7. Derechos de los Titulares",
+        "content": "Conforme a la Ley 1581 de 2012, los Titulares tienen los siguientes derechos:",
+        "items": [
+          "Conocer, actualizar y rectificar sus datos personales.",
+          "Solicitar prueba de la autorización otorgada.",
+          "Ser informado sobre el uso dado a sus datos personales.",
+          "Presentar quejas ante la Superintendencia de Industria y Comercio.",
+          "Revocar la autorización y solicitar la supresión de datos cuando no exista obligación legal o contractual de conservarlos.",
+          "Acceder gratuitamente a sus datos personales objeto de tratamiento."
+        ]
+      },
+      "8": {
+        "title": "8. Procedimiento para Ejercer los Derechos",
+        "subsections": {
+          "8_1": {
+            "title": "8.1 Consultas",
+            "content": "Los Titulares pueden consultar sus datos personales mediante solicitud dirigida a:\n- Correo electrónico: service@altumia.co\n- Dirección física: Bogota, Colombia Barrio los andes\nAltumia responderá la consulta en un plazo máximo de diez (10) días hábiles contados desde la fecha de recibo."
+          },
+          "8_2": {
+            "title": "8.2 Reclamos",
+            "content": "Los Titulares pueden presentar reclamos sobre el tratamiento de sus datos. El reclamo debe contener: Identificación del Titular, descripción de los hechos que dan lugar al reclamo, dirección y datos de contacto, y documentos que se quieran hacer valer.\nAltumia responderá el reclamo en un plazo máximo de quince (15) días hábiles contados desde la fecha de recibo. Si no fuera posible atenderlo en dicho plazo, se informará al Titular expresando los motivos y señalando la fecha en que se atenderá (máximo 8 días hábiles adicionales)."
+          }
+        }
+      },
+      "9": {
+        "title": "9. Autorización del Titular",
+        "content": "Altumia obtendrá la autorización del Titular de manera:\n- Expresa: Mediante formularios físicos o electrónicos, casillas de verificación, firmas.\n- Implícita: Cuando el Titular no se oponga al tratamiento después de haber sido informado.\n\nLa autorización no será necesaria cuando: se trate de información requerida por autoridad pública, datos de naturaleza pública, casos de urgencia médica, Registro Civil o Registro Mercantil."
+      },
+      "10": {
+        "title": "10. Transferencia y Transmisión de Datos",
+        "content": "Altumia podrá transferir o transmitir datos personales a proveedores de servicios tecnológicos (hosting, nube), pasarelas de pago, autoridades competentes y terceros con relación contractual. Se garantizará que los terceros cumplan con niveles de protección similares."
+      },
+      "11": {
+        "title": "11. Medidas de Seguridad",
+        "content": "Altumia implementa medidas técnicas, humanas y administrativas para proteger los datos personales, incluyendo: Cifrado de datos sensibles, control de acceso mediante autenticación, firewalls, copias de seguridad periódicas, capacitación del personal y acuerdos de confidencialidad."
+      },
+      "12": {
+        "title": "12. Conservación de Datos",
+        "content": "Los datos personales serán conservados durante el tiempo necesario para cumplir con las finalidades y mientras subsistan obligaciones legales o contractuales. Una vez cumplidas, los datos serán eliminados de forma segura."
+      },
+      "13": {
+        "title": "13. Cookies y Tecnologías Similares",
+        "content": "El sitio web de Altumia utiliza cookies para mejorar la experiencia, analizar tráfico y personalizar contenido.",
+        "items": [
+          "Cookies técnicas: Necesarias para el funcionamiento del sitio.",
+          "Cookies analíticas: Para análisis estadístico del uso del sitio.",
+          "Cookies de personalización: Para recordar preferencias del usuario."
+        ]
+      },
+      "14": {
+        "title": "14. Datos de Menores de Edad",
+        "content": "Altumia no recopila intencionalmente datos de menores de edad sin consentimiento previo de padres o representantes legales. En caso de detección, se procederá a su eliminación inmediata."
+      },
+      "15": {
+        "title": "15. Modificaciones a la Política de Privacidad",
+        "content": "Altumia se reserva el derecho de modificar esta Política en cualquier momento. Las modificaciones se publicarán en altumia.co con la fecha de actualización correspondiente."
+      },
+      "16": {
+        "title": "16. Área Responsable",
+        "content": "Área: Servicio al Cliente\nCorreo electrónico: service@altumia.co\nTeléfono: +57 320 7408391\nHorario de atención: 8am – 5pm"
+      },
+      "17": {
+        "title": "17. Autoridad de Control",
+        "content": "Los Titulares pueden presentar quejas ante la Superintendencia de Industria y Comercio (SIC).\nDirección: Carrera 13 No. 27 - 00, Bogotá D.C.\nTeléfono: (601) 587 0000\nSitio web: www.sic.gov.co"
+      },
+      "18": {
+        "title": "18. Vigencia",
+        "content": "Esta Política de Privacidad rige a partir de su fecha de publicación (Enero 12, 2026) y permanecerá vigente hasta que sea modificada."
+      }
+    },
+    "acceptance": "Al proporcionar sus datos personales a Altumia, usted declara haber leído, entendido y aceptado esta Política de Privacidad y autoriza el tratamiento de sus datos conforme a lo establecido en la misma."
+  }
+}

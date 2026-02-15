@@ -1,0 +1,36 @@
+{
+    "Herot":{
+        "Index": {
+    "careers": {
+      "title": "Join Our Team",
+      "description": "We are looking for passionate and talented individuals to help us build the future of AI in the Americas. Discover a culture of innovation, continuous learning, and impact.",
+      "openPositions": "Open Positions",
+      "applyNow": "Apply Now"
+    },
+    "benefits": {
+      "remote": {
+        "title": "Remote Culture",
+        "description": "Work from anywhere in the Americas with a flexible and results-oriented culture."
+      },
+      "impact": {
+        "title": "Positive Impact",
+        "description": "Your work will directly help transform industries and improve people's lives."
+      },
+      "growth": {
+        "title": "Continuous Growth",
+        "description": "Access to training, certifications, and a personalized professional development plan."
+      }
+    },
+    "jobs": {
+      "seniorAi": {
+        "title": "Senior AI/ML Engineer",
+        "description": "Design and implement advanced machine learning models for our enterprise clients in various industries."
+      },
+      "solutionsArchitect": {
+        "title": "AI Solutions Architect",
+        "description": "Lead the technical design of AI solutions, translating business needs into robust and scalable architectures."
+      }
+    }
+  }
+    }
+}

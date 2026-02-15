@@ -78,8 +78,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Page() {
   const locale = await getLocale();
 
-  const successStoriesMessages = (
-    await import(`../../../../messages/${locale}/success-stories.json`)
+  const successstoriesMessages = (
+    await import(`../../../../messages/${locale}/successstories.json`)
   ).default;
 
   const base = "https://altumia.co";
@@ -191,7 +191,7 @@ export default async function Page() {
 
       <NextIntlClientProvider
         locale={locale}
-        messages={successStoriesMessages}
+        messages={successstoriesMessages}
       >
         <SuccessStoriesIndex />
       </NextIntlClientProvider>

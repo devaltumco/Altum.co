@@ -19,6 +19,16 @@ export default function Footer() {
     instagram: "https://instagram.com/altumia.design"
   };
 
+  // Mapeo de claves de traducción a rutas reales
+  const navLinks = [
+    { key: "about", href: "/about-us" },
+    { key: "solutions", href: "/solutions" },
+    { key: "industries", href: "/industries-altumia" },
+    { key: "cases", href: "/success-stories" }, // Ajustado a tu ruta success-stories
+    { key: "blog", href: "/blog" },
+    { key: "careers", href: "/careers" },
+  ];
+
   return (
     <footer className="bg-[#0a0a0a] text-slate-200 border-t border-white/5">
       <div className="max-w-[1400px] mx-auto py-16 px-6 lg:px-12">
@@ -56,16 +66,16 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* Columna 2: Enlaces Rápidos */}
+          {/* Columna 2: Enlaces Rápidos con rutas reales */}
           <div>
             <h3 className="text-sm font-bold tracking-widest uppercase text-white mb-6 border-l-2 border-altum-aqua pl-3">
               {t("quickLinks.title")}
             </h3>
             <ul className="space-y-3">
-              {["about", "solutions", "industries", "cases", "blog", "careers"].map((key) => (
-                <li key={key}>
-                  <Link href="/" className="text-sm text-slate-400 hover:text-altum-aqua transition-colors">
-                    {t(`quickLinks.${key}`)}
+              {navLinks.map((link) => (
+                <li key={link.key}>
+                  <Link href={link.href} className="text-sm text-slate-400 hover:text-altum-aqua transition-colors">
+                    {t(`quickLinks.${link.key}`)}
                   </Link>
                 </li>
               ))}
@@ -79,7 +89,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><span className="text-white font-semibold">Toronto:</span> {t("offices.toronto")}</li>
-              <li><span className="text-white font-semibold">Ciudad de México:</span> {t("offices.mexico")}</li>
+              <li><span className="text-white font-semibold">México:</span> {t("offices.mexico")}</li>
               <li><span className="text-white font-semibold pb-0.5">Bogotá:</span> {t("offices.bogota")}</li>
             </ul>
           </div>
@@ -91,13 +101,12 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-slate-400">
               <li>
-                <a href="mailto:contact@altum-ia.com" className="hover:text-altum-aqua transition-colors">
-                  contact@altum-ia.com
+                <a href="mailto:service@altumia.co" className="hover:text-altum-aqua transition-colors">
+                   service@altumia.co 
                 </a>
               </li>
-              <li className="hover:text-altum-violeta transition-colors">Toronto: +1 (416) 555-0123</li>
-              <li className="hover:text-altum-violeta transition-colors">México: +52 (55) 5555-0123</li>
-              <li className="hover:text-altum-violeta transition-colors">Bogotá: +57 (601) 555-0123</li>
+         
+              <li className="hover:text-altum-violeta transition-colors">Bogotá: +57 320 7408391</li>
             </ul>
           </div>
         </div>
@@ -105,15 +114,15 @@ export default function Footer() {
         {/* Footer Bottom con detalles sutiles en Gris Corporativo */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col items-center">
           <p className="text-[10px] text-slate-500 tracking-[0.2em] uppercase mb-4">
-            Altum IA Design System
+            AltumIA Design System
           </p>
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Altum IA Inc. {t("copyright")}
+            © {new Date().getFullYear()} AltumIA Inc. {t("copyright")}
           </p>
           <div className="mt-4 flex gap-6 text-xs text-slate-500">
-            <Link href="/" className="hover:text-altum-aqua transition-colors">{t("privacy")}</Link>
+            <Link href="/privacy-policy" className="hover:text-altum-aqua transition-colors">{t("privacy")}</Link>
             <span className="text-white/10">|</span>
-            <Link href="/" className="hover:text-altum-aqua transition-colors">{t("terms")}</Link>
+            <Link href="/terms-and-conditions" className="hover:text-altum-aqua transition-colors">{t("terms")}</Link>
           </div>
         </div>
       </div>

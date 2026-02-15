@@ -1,0 +1,40 @@
+{
+  "Herot": {
+    "solutions": {
+      "title": "Nuestras Soluciones de Implementación IA",
+      "description": "Ofrecemos una suite completa de servicios para llevar a su empresa del dato al resultado decisivo, cubriendo toda la cadena de valor de la IA.",
+      "ml": {
+        "title": "Machine Learning",
+        "description": "Modelos predictivos que optimizan decisiones."
+      },
+      "automation": {
+        "title": "Automatización Inteligente",
+        "description": "Bots que agilizan tus operaciones."
+      },
+      "vision": {
+        "title": "Computer Vision",
+        "description": "IA que ve y entiende el mundo."
+      },
+      "nlp": {
+        "title": "PLN",
+        "description": "Sistemas que interpretan y generan lenguaje."
+      },
+      "gen_ai": {
+        "title": "IA Generativa",
+        "description": "Creatividad y contenido impulsado por IA."
+      },
+      "analytics": {
+        "title": "Data Analytics",
+        "description": "Convertimos tus datos en insights de valor."
+      },
+      "cloud_ai": {
+        "title": "Cloud + IA",
+        "description": "Infraestructura escalable para tu IA."
+      },
+      "low_code": {
+        "title": "Low-code IA",
+        "description": "Aceleramos la implementación de tu IA."
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "PrivacyPolicy": {
+    "lastUpdate": "Last Update: January 12, 2026",
+    "sections": {
+      "1": {
+        "title": "1. Introduction",
+        "content": "Altumia (hereinafter, “Altumia”, “we” or “the Company”), in compliance with Law 1581 of 2012, Decree 1377 of 2013 and other concordant norms on the protection of personal data in Colombia, presents this Privacy Policy describing how we collect, use, store and protect the personal information of our users, clients and visitors."
+      },
+      "2": {
+        "title": "2. Data Controller",
+        "content": "Business Name: Altumia\nWebsite: altumia.co\nEmail: service@altumia.co\nAddress: Bogota, Colombia Barrio los andes"
+      },
+      "3": {
+        "title": "3. Definitions",
+        "content": "In accordance with Law 1581 of 2012:",
+        "items": [
+          "Personal Data: Any information linked or that can be associated with one or more specific or determinable natural persons.",
+          "Data Subject: Natural person whose personal data is subject to processing.",
+          "Processing: Any operation or set of operations on personal data, such as collection, storage, use, circulation or deletion.",
+          "Data Controller: Altumia, who decides on the database and the processing of data.",
+          "Data Processor: Natural or legal person who performs the processing on behalf of the controller.",
+          "Authorization: Prior, express and informed consent of the Data Subject to carry out the processing of personal data."
+        ]
+      },
+      "4": {
+        "title": "4. Principles for the Processing of Personal Data",
+        "content": "Altumia is committed to applying the following principles in the processing of personal data:",
+        "items": [
+          "Legality: Processing will be carried out in accordance with current regulations.",
+          "Purpose: Processing obeys a legitimate purpose, informed to the Data Subject.",
+          "Freedom: Processing requires prior, express and informed consent of the Data Subject.",
+          "Veracity or Quality: Information must be truthful, complete, accurate and updated.",
+          "Transparency: The right of information to the Data Subject is guaranteed.",
+          "Access and Restricted Circulation: Processing is subject to the limits of the authorization.",
+          "Security: Technical, human and administrative measures will be implemented to protect data.",
+          "Confidentiality: All persons involved in the processing are obliged to guarantee confidentiality."
+        ]
+      },
+      "5": {
+        "title": "5. Personal Data We Collect",
+        "content": "Altumia may collect the following categories of personal data:",
+        "subsections": {
+          "5_1": {
+            "title": "5.1 Identification Data",
+            "items": [
+              "Full name",
+              "Identification number (ID, tax ID, passport)",
+              "Date of birth",
+              "Photograph"
+            ]
+          },
+          "5_2": {
+            "title": "5.2 Contact Data",
+            "items": [
+              "Physical address",
+              "Email address",
+              "Phone number",
+              "Social media"
+            ]
+          },
+          "5_3": {
+            "title": "5.3 Professional and Employment Data",
+            "items": [
+              "Position",
+              "Company",
+              "Professional information"
+            ]
+          },
+          "5_4": {
+            "title": "5.4 Browsing Data",
+            "items": [
+              "IP address",
+              "Browser type",
+              "Visited pages",
+              "Browsing time",
+              "Cookies and similar technologies"
+            ]
+          },
+          "5_5": {
+            "title": "5.5 Financial Data (when applicable)",
+            "items": [
+              "Banking information for payments",
+              "Transaction history"
+            ]
+          }
+        }
+      },
+      "6": {
+        "title": "6. Purposes of Processing",
+        "content": "The personal data collected will be used for the following purposes:",
+        "subsections": {
+          "6_1": {
+            "title": "6.1 Primary Purposes",
+            "items": [
+              "Provision of contracted technological services",
+              "Management of the commercial and contractual relationship",
+              "Invoicing and payment management",
+              "Handling of requests, complaints and claims",
+              "Compliance with legal and contractual obligations"
+            ]
+          },
+          "6_2": {
+            "title": "6.2 Secondary Purposes (require specific authorization)",
+            "items": [
+              "Sending commercial, advertising and promotional information",
+              "Market research and statistical analysis",
+              "Improvement of products and services",
+              "Invitations to events, webinars and training",
+              "Management of loyalty programs"
+            ],
+            "note": "The Data Subject may object to the processing for secondary purposes at any time."
+          }
+        }
+      },
+      "7": {
+        "title": "7. Rights of Data Subjects",
+        "content": "In accordance with Law 1581 of 2012, Data Subjects have the following rights:",
+        "items": [
+          "To know, update and rectify their personal data.",
+          "To request proof of the granted authorization.",
+          "To be informed about the use given to their personal data.",
+          "To file complaints with the Superintendence of Industry and Commerce.",
+          "To revoke the authorization and request the deletion of data when there is no legal or contractual obligation to keep them.",
+          "To access their personal data under processing free of charge."
+        ]
+      },
+      "8": {
+        "title": "8. Procedure for Exercising Rights",
+        "subsections": {
+          "8_1": {
+            "title": "8.1 Inquiries",
+            "content": "Data Subjects may inquire about their personal data by means of a request addressed to:\n- Email: service@altumia.co\n- Physical address: Bogota, Colombia Barrio los andes\nAltumia will respond to the inquiry within a maximum of ten (10) business days from the date of receipt."
+          },
+          "8_2": {
+            "title": "8.2 Claims",
+            "content": "Data Subjects may file claims regarding the processing of their data. The claim must contain: Identification of the Subject, description of the facts giving rise to the claim, address and contact details, and documents to be asserted.\nAltumia will respond to the claim within a maximum of fifteen (15) business days from the date of receipt. If it is not possible to attend it within said term, the Subject will be informed, expressing the reasons and indicating the date on which it will be attended (maximum 8 additional business days)."
+          }
+        }
+      },
+      "9": {
+        "title": "9. Data Subject Authorization",
+        "content": "Altumia will obtain the authorization of the Data Subject in an:\n- Express manner: Through physical or electronic forms, checkboxes, signatures.\n- Implicit manner: When the Subject does not object to the processing after being informed.\n\nAuthorization will not be necessary when: it concerns information required by a public authority, data of a public nature, cases of medical urgency, Civil Registry or Commercial Registry data."
+      },
+      "10": {
+        "title": "10. Data Transfer and Transmission",
+        "content": "Altumia may transfer or transmit personal data to technology service providers (hosting, cloud), payment gateways, competent authorities and third parties with a contractual relationship. It will be guaranteed that third parties comply with protection levels similar to those established in this Policy."
+      },
+      "11": {
+        "title": "11. Security Measures",
+        "content": "Altumia implements technical, human and administrative measures to protect personal data, including: Encryption of sensitive data, access control through authentication, firewalls, periodic backups, staff training and confidentiality agreements."
+      },
+      "12": {
+        "title": "12. Data Retention",
+        "content": "Personal data will be kept for the time necessary to fulfill the purposes and as long as legal or contractual obligations exist. Once fulfilled, data will be safely deleted."
+      },
+      "13": {
+        "title": "13. Cookies and Similar Technologies",
+        "content": "Altumia's website uses cookies to improve the experience, analyze traffic and personalize content.",
+        "items": [
+          "Technical cookies: Necessary for the operation of the site.",
+          "Analytical cookies: For statistical analysis of site usage.",
+          "Personalization cookies: To remember user preferences."
+        ]
+      },
+      "14": {
+        "title": "14. Data of Minors",
+        "content": "Altumia does not intentionally collect data from minors without prior consent from parents or legal representatives. If it is detected that data from minors has been collected without authorization, its immediate deletion will proceed."
+      },
+      "15": {
+        "title": "15. Modifications to the Privacy Policy",
+        "content": "Altumia reserves the right to modify this Privacy Policy at any time. Modifications will be published on altumia.co with the corresponding update date."
+      },
+      "16": {
+        "title": "16. Responsible Area",
+        "content": "Area: Customer Service\nEmail: service@altumia.co\nPhone: +57 320 7408391\nHours of operation: 8am – 5pm"
+      },
+      "17": {
+        "title": "17. Control Authority",
+        "content": "Data Subjects may file complaints before the data protection authority in Colombia:\nSuperintendency of Industry and Commerce (SIC).\nAddress: Carrera 13 No. 27 - 00, Bogotá D.C.\nPhone: (601) 587 0000\nWebsite: www.sic.gov.co"
+      },
+      "18": {
+        "title": "18. Validity",
+        "content": "This Privacy Policy is effective as of its date of publication (January 12, 2026) and will remain in effect until modified."
+      }
+    },
+    "acceptance": "By providing your personal data to Altumia, you declare that you have read, understood and accepted this Privacy Policy and authorize the processing of your data as established therein."
+  }
+}

@@ -5,30 +5,30 @@
     "description": "Leaders in responsible AI implementation, Machine Learning, and Automation. Transforming industries across Colombia, Mexico, and Canada with cutting-edge technological solutions.",
     "keywords": "software development, artificial intelligence, machine learning, intelligent automation, responsible AI, data consulting, cloud solutions, modern web development"
 },
-"MetadataBlog": {
-  "title": "Software Development and Artificial Intelligence | Altumai",
-  "description": "Articles on responsible AI implementation, Machine Learning, and Automation. We transform industries in Colombia, Mexico, and Canada with cutting-edge technological solutions.",
-  "keywords": "software development, artificial intelligence, machine learning, intelligent automation, responsible AI, data consulting, cloud solutions, modern web development"
-},
+  "MetadataBlog": {
+    "title": "AI & Software Development Blog | AltumIA Insights",
+    "description": "Expert insights on responsible AI implementation, Machine Learning, and Enterprise Automation. Discover how we drive innovation across Canada, Mexico, and Colombia.",
+    "keywords": "enterprise AI, software development, machine learning insights, responsible AI, data-driven automation, cloud solutions, tech consulting Canada, AI implementation Mexico"
+  },
   "MetadataSolutions": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "Software Development & AI Solutions | AltumIA",
+    "description": "Scalable AI solutions including Machine Learning, Intelligent Automation, and custom software development. Driving digital transformation for industries in Canada, Mexico, and Colombia.",
+    "keywords": "AI solutions, custom software development, enterprise machine learning, industrial automation, responsible AI deployment, cloud architecture, data engineering, AltumIA services"
   },
    "MetadataCareers": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "Careers in AI & Software Engineering | Join AltumIA",
+    "description": "Join a world-class team building the future of Artificial Intelligence. Explore remote opportunities in software development and Machine Learning across the Americas.",
+    "keywords": "AI jobs, software engineering careers, work at AltumIA, Machine Learning engineer vacancies, remote tech jobs Colombia, tech talent Mexico, AI careers Canada"
   },
    "MetadataIndustriesAltumia": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "AI Solutions for Specialized Industries | AltumIA",
+    "description": "Tailored AI implementation for Finance, Healthcare, Retail, and Manufacturing. We drive operational excellence and innovation across industries in Canada, Mexico, and Colombia.",
+    "keywords": "industrial AI, fintech solutions, healthcare machine learning, retail automation, smart manufacturing, sector-specific software, business intelligence, digital transformation industries"
   },
    "MetadataSuccessStories": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "AI Success Stories & Case Studies | AltumIA",
+    "description": "Real-world impact through AI and Software Development. Explore our case studies on how we've helped companies in Canada, Mexico, and Colombia achieve measurable results.",
+    "keywords": "AI case studies, software development success stories, machine learning results, business automation impact, tech implementation examples, AltumIA portfolio, digital transformation success"
   },
    "MetadataAboutUs": {
     "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
@@ -49,11 +49,6 @@
     "close": "Close",
     "view": "View"
   },
-  "languageSwitcher": {
-    "selectLanguageHeading": "Select Language",
-    "englishFullName": "English",
-    "spanishFullName": "Spanish"
-  },
   "Footer": {
     "tagline": "Artificial precision, human judgment.",
     "quickLinks": {
@@ -67,9 +62,9 @@
     },
     "offices": {
       "title": "Our Offices",
-      "toronto": "123 Yonge St, ON, Canada",
-      "mexico": "Av. Reforma 456, CDMX, Mexico",
-      "bogota": "Cra. 11 #82-01, Bogota, Colombia"
+         "toronto": "38 annie Craig – Toronto Canada",
+      "mexico": "Colonia Monraz – coras 3225",
+      "bogota": "Calle 98ª #61 -40 andes"
     },
     "contact": {
       "title": "Contact"
@@ -81,7 +76,7 @@
   "ChatBot": {
     "welcome": "Hello! How can I help you today?",
     "liveChat": "Live Chat",
-    "whatsappChat": "Chat via WhatsApp",
+    "whatsappChat": "Chat on WhatsApp",
     "back": "Back",
     "advisorName": "Altumia Advisor",
     "status": "Online",

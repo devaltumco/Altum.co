@@ -6,34 +6,34 @@
     "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno"
 },
 "MetadataBlog": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "Blog de IA y Desarrollo de Software | Insights de AltumIA",
+    "description": "Artículos expertos sobre implementación responsable de IA, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones de vanguardia.",
+    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, transformación digital Colombia"
   },
   "MetadataSolutions": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "Soluciones de Software e Inteligencia Artificial | AltumIA",
+    "description": "Implementación de IA responsable, Machine Learning y Automatización a medida. Transformamos la eficiencia operativa en Colombia, México y Canadá con tecnología de vanguardia.",
+    "keywords": "soluciones de inteligencia artificial, desarrollo de software a medida, machine learning empresarial, automatización de procesos, consultoría tecnológica, IA para empresas, desarrollo cloud"
   },
-   "MetadataCareers": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  "MetadataCareers": {
+    "title": "Carreras en IA y Desarrollo de Software | Únete a AltumIA",
+    "description": "Forma parte del equipo que lidera la innovación en Inteligencia Artificial. Busca vacantes en desarrollo de software y Machine Learning en Colombia, México y Canadá.",
+    "keywords": "trabajo en inteligencia artificial, vacantes desarrollador de software, carreras tech, unirse a AltumIA, empleo programador México, vacantes IA Colombia, talento tecnológico"
   },
-   "MetadataIndustriesAltumia": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+  "MetadataIndustriesAltumia": {
+    "title": "IA Aplicada a Industrias Especializadas | AltumIA",
+    "description": "Transformación inteligente para Banca, Salud, Retail y Manufactura. Soluciones de IA a medida que optimizan procesos y resultados en Colombia, México y Canadá.",
+    "keywords": "IA industrial, soluciones para fintech, tecnología en salud, automatización de retail, manufactura 4.0, software especializado por industria, consultoría tecnológica sectorial, AltumIA industrias"
   },
    "MetadataSuccessStories": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+    "title": "Casos de Éxito en IA y Software | AltumIA",
+    "description": "Resultados reales e impacto medible. Descubre cómo ayudamos a empresas en Colombia, México y Canadá a innovar con Inteligencia Artificial aplicada y desarrollo a medida.",
+    "keywords": "casos de éxito inteligencia artificial, ejemplos desarrollo software, resultados machine learning, impacto transformación digital, portafolio tecnológico, testimonios AltumIA, soluciones probadas"
   },
-   "MetadataAboutUs": {
-    "title": "Desarrollo de Software e Inteligencia Artificial | Altumia",
-    "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
-    "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
+ "MetadataAboutUs": {
+    "title": "About Us | AI Experts & Software Engineers | AltumIA",
+    "description": "Learn about AltumIA, a leading technology firm specializing in responsible AI and custom software. Based in Canada, Mexico, and Colombia, we build the future of intelligent business.",
+    "keywords": "about AltumIA, AI leadership, software development team, technology consultants, AI mission and values, tech expertise Americas, responsible AI company"
   },
 
   "Index": {
@@ -68,9 +68,9 @@
     },
     "offices": {
       "title": "Nuestras Oficinas",
-      "toronto": "123 Yonge St, ON, Canadá",
-      "mexico": "Av. Reforma 456, CDMX, México",
-      "bogota": "Cra. 11 #82-01, Bogotá, Colombia"
+      "toronto": "38 annie Craig – Toronto Canada",
+      "mexico": "Colonia Monraz – coras 3225",
+      "bogota": "Calle 98ª #61 -40 andes"
     },
     "contact": {
       "title": "Contacto"

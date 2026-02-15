@@ -34,6 +34,14 @@ export const routing = defineRouting({
       en: "/careers",
       es: "/vacantes",
     },
+    "/privacy-policy": {
+      en: "/privacy-policy",
+      es: "/politica-de-privacidad",
+    },
+    "/terms-and-conditions": {
+      en: "/terms-and-conditions",
+      es: "/terminos-y-condiciones",
+    },
 
     // --- Ruta Dinámica ---
     '/industries/[slug]': {

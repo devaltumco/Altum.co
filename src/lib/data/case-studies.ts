@@ -71,4 +71,16 @@ export const caseStudies = [
       { valueKey: 'studies.5.results.1.value', labelKey: 'studies.5.results.1.label' },
     ],
   },
+  {
+    slug: 'agricultura-inteligente-centroamerica',
+    titleKey: 'studies.6.title',
+    summaryKey: 'studies.6.summary',
+    industryKey: 'industries.agribusiness',
+    countryKey: 'countries.central_america',
+    image: '/images/imge.jpg',
+    results: [
+      { valueKey: 'studies.6.results.0.value', labelKey: 'studies.6.results.0.label' },
+      { valueKey: 'studies.6.results.1.value', labelKey: 'studies.6.results.1.label' },
+    ],
+  }
 ];

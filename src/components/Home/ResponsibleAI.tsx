@@ -53,11 +53,11 @@ export default function ResponsibleAI() {
             
             <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
               <Image 
-                src="/images/aialtum.jpg" // ⚠️ Asegúrate de tener esta imagen o cambiar la ruta
+                src="/images/responsabilidadai.jpg" // ⚠️ Asegúrate de tener esta imagen o cambiar la ruta
                 alt={t('title')}
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 100vw"
               />
               {/* Overlay sutil para integrar mejor la imagen */}
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />

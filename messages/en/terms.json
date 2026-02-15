@@ -1,0 +1,160 @@
+{
+  "TermsOfService": {
+    "lastUpdate": "Last Updated: February 12, 2026",
+    "sections": {
+      "1": {
+        "title": "1. Introduction",
+        "content": "These Terms of Service (hereinafter, \"the Terms\") regulate the contractual relationship between Altumia (hereinafter, \"Altumia\", \"we\" or \"the Company\") and the client or user (hereinafter, \"the Client\" or \"you\") who hires the technological services offered by Altumia."
+      },
+      "2": {
+        "title": "2. Object of the Contract",
+        "content": "Altumia provides technological services and solutions as agreed in each specific contract, service order, or commercial proposal accepted by the Client."
+      },
+      "3": {
+        "title": "3. Acceptance of Terms",
+        "content": "By hiring any service from Altumia, the Client expressly accepts these Terms of Service. If acting on behalf of a company or organization, you declare to have the necessary authority to bind said entity."
+      },
+      "4": {
+        "title": "4. Description of Services",
+        "subsections": {
+          "4_1": {
+            "title": "4.1 Scope",
+            "content": "Specific services, deliverables, deadlines, and prices will be detailed in: Commercial proposals, Service orders, Specific contracts, and Technical annexes."
+          },
+          "4_2": {
+            "title": "4.2 Modifications",
+            "content": "Altumia reserves the right to modify, suspend, or discontinue any aspect of the services, upon prior notification to the Client when reasonably possible."
+          }
+        }
+      },
+      "5": {
+        "title": "5. Client Obligations",
+        "content": "The Client agrees to:",
+        "items": [
+          "Provide true, complete, and up-to-date information",
+          "Facilitate necessary access to systems, data, and personnel for service provision",
+          "Designate an authorized representative for communication and decision-making",
+          "Comply with agreed deadlines for reviews and approvals",
+          "Make payments within the established terms",
+          "Use the services in accordance with the law and these Terms"
+        ]
+      },
+      "6": {
+        "title": "6. Altumia Obligations",
+        "content": "Altumia agrees to:",
+        "items": [
+          "Provide services with professionalism and industry quality standards",
+          "Assign qualified personnel for the execution of services",
+          "Maintain the confidentiality of Client information",
+          "Inform timely about progress and any impediments in service provision",
+          "Comply with agreed deadlines, except for force majeure or delays attributable to the Client"
+        ]
+      },
+      "7": {
+        "title": "7. Pricing and Payment",
+        "subsections": {
+          "7_1": {
+            "title": "7.1 Prices",
+            "content": "Prices will be established in each commercial proposal or specific contract and will be expressed in Colombian Pesos (COP) or US Dollars (USD) as agreed."
+          },
+          "7_2": {
+            "title": "7.2 Invoicing",
+            "content": "Altumia will issue electronic invoices in accordance with current Colombian regulations."
+          },
+          "7_3": {
+            "title": "7.3 Payment Terms",
+            "items": [
+              "Payments will be made according to the schedule established in each contract",
+              "Delayed payment may result in temporary suspension of services",
+              "Overdue payments will generate late interest at the maximum legal rate allowed in Colombia"
+            ]
+          },
+          "7_4": {
+            "title": "7.4 Taxes",
+            "content": "All prices are subject to applicable taxes according to Colombian legislation (VAT, withholdings, etc.)."
+          }
+        }
+      },
+      "8": {
+        "title": "8. Intellectual Property",
+        "subsections": {
+          "8_1": {
+            "title": "8.1 Pre-existing Rights",
+            "content": "Each party retains all rights to its pre-existing intellectual property."
+          },
+          "8_2": {
+            "title": "8.2 New Developments",
+            "content": "Unless otherwise agreed, intellectual property rights on deliverables created specifically for the Client will transfer to the Client upon total payment. Altumia retains the right to use general methodologies and knowledge."
+          },
+          "8_3": {
+            "title": "8.3 Third-Party Licenses",
+            "content": "When using third-party components or software, the Client must comply with the corresponding licenses."
+          }
+        }
+      },
+      "9": {
+        "title": "9. Confidentiality",
+        "content": "Both parties agree to keep all sensitive information exchanged confidential, unless it is in the public domain or must be disclosed by legal mandate. This obligation will remain in force for three (3) years after termination."
+      },
+      "10": {
+        "title": "10. Personal Data Protection",
+        "content": "Altumia complies with Law 1581 of 2012 and Decree 1377 of 2013 regarding personal data protection. For more information, please see our Privacy Policy."
+      },
+      "11": {
+        "title": "11. Warranties and Limitations",
+        "subsections": {
+          "11_1": {
+            "title": "11.1 Service Warranty",
+            "content": "Altumia guarantees that services will be provided with due professional care according to industry standards."
+          },
+          "11_2": {
+            "title": "11.2 Limitations",
+            "content": "Altumia DOES NOT guarantee: specific commercial results, uninterrupted operation, or total compatibility with systems not previously specified."
+          },
+          "11_3": {
+            "title": "11.3 Warranty Period",
+            "content": "Errors reported within thirty (30) days following delivery will be corrected at no cost, provided they are attributable to Altumia."
+          }
+        }
+      },
+      "12": {
+        "title": "12. Limitation of Liability",
+        "content": "To the maximum extent permitted by Colombian law: Total liability shall not exceed the amount paid in the last 6 months. Altumia shall not be liable for lost profits or loss of data."
+      },
+      "13": {
+        "title": "13. Force Majeure",
+        "content": "Neither party shall be liable for failures caused by events beyond their reasonable control, including natural disasters, acts of authority, or infrastructure failures."
+      },
+      "14": {
+        "title": "14. Validity and Termination",
+        "subsections": {
+          "14_1": { "title": "14.1 Validity", "content": "Contracts will have the term specified in each particular agreement." },
+          "14_2": { "title": "14.2 Default", "content": "The contract may be terminated if the other party breaches and does not remedy within fifteen (15) days." },
+          "14_3": { "title": "14.3 Convenience", "content": "The Client may terminate the contract with thirty (30) days' notice, paying for services rendered." },
+          "14_4": { "title": "14.4 Effects", "items": ["Payment of owed amounts", "Delivery of completed work", "Ongoing confidentiality validity"] }
+        }
+      },
+      "15": {
+        "title": "15. Modifications",
+        "content": "Altumia may modify these Terms by notifying the Client thirty (30) days in advance. Continued use constitutes acceptance."
+      },
+      "16": {
+        "title": "16. Applicable Law and Dispute Resolution",
+        "content": "These Terms are governed by the laws of Colombia. Disputes not resolved in 30 days will be submitted to the competent courts of Colombia."
+      },
+      "17": {
+        "title": "17. General Provisions",
+        "items": [
+          "Completeness: These Terms and specific contracts constitute the entire agreement.",
+          "Assignment: The Client may not assign their rights without written consent.",
+          "Notifications: Will be made in writing to the addresses provided."
+        ]
+      },
+      "18": {
+        "title": "18. Contact",
+        "content": "For inquiries regarding these Terms:\nAltumia\nWebsite: altumia.co\nEmail: service@altumia.co"
+      }
+    },
+    "acceptance": "By hiring Altumia's services, you accept these Terms of Service in their entirety."
+  }
+}

@@ -3,10 +3,14 @@
     "title": "Pioneros en IA de Negocios en América",
     "description": "Fundados con la visión de democratizar el acceso a la inteligencia artificial, Altum IA se ha convertido en el socio estratégico de empresas líderes en el continente. Nuestro equipo multidisciplinario combina experiencia técnica con un profundo entendimiento de los retos de negocio de la región.",
     "team": {
-      "elena": { "role": "CEO & Co-fundadora" },
-      "aris": { "role": "CTO & Líder de Investigación IA" },
-      "sofia": { "role": "VP de Ventas, Américas" },
-      "mateo": { "role": "Gerente General, LATAM" }
+      "elena": { "role": "Socio Fundador" },
+      "aris": { "role": "Socio Fundador" },
+      "sofia": { "role": "Socio Fundador" },
+      "mateo": { "role": "Socio Fundador" },
+      "andres": { "role": "Socio Fundador" },
+       "alexrivera": { "role": "Socio Fundador" }
+
+
     },
     "history": {
       "title": "Nuestra Historia",

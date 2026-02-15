@@ -69,7 +69,6 @@ export default function Blog() {
               <div className="aspect-video relative overflow-hidden">
                 <Image
                   src={post.image}
-                  // t("posts.1.title") -> Resuelve: Herot.blog.posts.1.title (CORRECTO)
                   alt={t(post.titleKey)}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"

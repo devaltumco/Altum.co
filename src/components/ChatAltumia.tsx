@@ -9,13 +9,10 @@ import Image from "next/image";
 import {
   Send,
   MessageCircle,
-  MessageSquareText,
   Bot,
   X,
   Loader2,
-  ArrowRight,
   ChevronLeft,
-  MessageSquare
 } from 'lucide-react';
 
 // --- Interfaces ---
@@ -268,7 +265,7 @@ export function ChatBot() {
         )}
       </AnimatePresence>
 
-      <button onClick={toggleContainer} className="fixed bottom-6 right-6 h-10 w-10 sm:h-12 sm:w-12 bg-altum-violeta text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all duration-300 group z-[10000] border border-white/10">
+      <button onClick={toggleContainer} className="fixed bottom-6 right-6 w-14 h-14   bg-altum-violeta text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all duration-300 group z-[10000] border border-white/10">
         <AnimatePresence mode="wait">
           {isOpen ? (
             <motion.div key="close" initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }}><X className="h-5 w-5 sm:h-5 sm:w-5" /></motion.div>

@@ -1,0 +1,83 @@
+{
+  "Herot": {
+    "caseStudies": {
+      "title": "Real Results, Measurable Impact",
+      "description": "Discover how we have helped companies like yours innovate and grow with applied Artificial Intelligence.",
+      "filterIndustry": "Filter by industry",
+      "filterCountry": "Filter by country",
+      "allIndustries": "All Industries",
+      "allCountries": "All Countries",
+      "noResults": "No success stories match your current filters.",
+      "studies": {
+        "0": {
+          "title": "AI Credit Scoring for Mexican Fintech",
+          "summary": "We developed a machine learning model that significantly reduced loan default rates.",
+          "results": {
+            "0": { "value": "30%", "label": "reduction in credit delinquency." },
+            "1": { "value": "20%", "label": "increase in market reach." }
+          }
+        },
+        "1": {
+          "title": "Hospital Management Optimization in Colombia",
+          "summary": "Implementation of a patient flow prediction system for healthcare facilities.",
+          "results": {
+            "0": { "value": "40%", "label": "reduction in waiting times." },
+            "1": { "value": "15%", "label": "improvement in bed efficiency." }
+          }
+        },
+        "2": {
+          "title": "E-commerce Personalization in Canada",
+          "summary": "Real-time recommendation engine that boosted customer loyalty and sales.",
+          "results": {
+            "0": { "value": "25%", "label": "increase in average order value." },
+            "1": { "value": "18%", "label": "growth in customer retention." }
+          }
+        },
+        "3": {
+          "title": "Predictive Maintenance in LATAM Manufacturing",
+          "summary": "AI system to predict machinery failures using IoT sensor data.",
+          "results": {
+            "0": { "value": "70%", "label": "reduction in downtime." },
+            "1": { "value": "20%", "label": "savings in maintenance costs." }
+          }
+        },
+        "4": {
+          "title": "Power Grid Optimization in Colombia",
+          "summary": "AI model to predict energy demand and optimize grid distribution.",
+          "results": {
+            "0": { "value": "95%", "label": "prediction accuracy." },
+            "1": { "value": "10%", "label": "reduction in energy losses." }
+          }
+        },
+        "5": {
+          "title": "Smart Agriculture in Central America",
+          "summary": "Early pest detection in coffee plantations using computer vision.",
+          "results": {
+            "0": { "value": "30%", "label": "increase in crop yield." },
+            "1": { "value": "90%", "label": "detection precision." }
+          }
+        }
+      }
+    },
+    "countries": {
+      "canada": "Canada",
+      "mexico": "Mexico",
+      "colombia": "Colombia",
+      "central_america": "Central America",
+      "latam": "LATAM"
+    },
+    "industries": {
+      "finance": "Fintech & Banking",
+      "healthcare": "Healthcare & Medical",
+      "retail": "Retail & E-commerce",
+      "manufacturing": "Manufacturing & Industry",
+      "energy": "Energy & Utilities",
+      "agribusiness": "Agribusiness",
+      "education": "Education",
+      "logistics": "Logistics & Transportation",
+      "legal": "Legal Services",
+      "real_estate": "Real Estate",
+      "insurance": "Insurance"
+    }
+  }
+}

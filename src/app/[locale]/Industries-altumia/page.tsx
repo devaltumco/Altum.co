@@ -78,7 +78,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Page() {
   const locale = await getLocale();
 
-  const industriesMessages = (
+  const industriesaltumiaMessages = (
     await import(`../../../../messages/${locale}/industriesaltumia.json`)
   ).default;
 
@@ -174,7 +174,7 @@ export default async function Page() {
         }}
       />
 
-      <NextIntlClientProvider locale={locale} messages={industriesMessages}>
+      <NextIntlClientProvider locale={locale} messages={industriesaltumiaMessages}>
         <IndustriesIndex />
       </NextIntlClientProvider>
     </>

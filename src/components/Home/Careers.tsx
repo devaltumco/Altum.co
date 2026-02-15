@@ -1,11 +1,26 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { jobOpenings, benefits } from "@/lib/data/jobs-data";
 import { ArrowRight, MapPin } from "lucide-react";
 
 export function Careers() {
-  const t = useTranslations("Herot.Index"); // Ajusta el namespace según tu i18n
+  const t = useTranslations("Herot.Index");
+  const locale = useLocale(); // Detectamos el idioma actual (es/en)
+
+  // Función para manejar el clic y redirigir a WhatsApp con mensaje dinámico
+  const handleWhatsAppApply = (jobTitle: string) => {
+    const phoneNumber = "573155870958";
+    
+    // Mensaje dinámico según el locale
+    const message = locale === "es" 
+      ? `Hola AltumIA, me gustaría aplicar a la vacante de: ${jobTitle}.`
+      : `Hello AltumIA, I would like to apply for the position: ${jobTitle}.`;
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <section className="py-24 bg-[#0a0a0a] text-white overflow-hidden">
@@ -79,9 +94,12 @@ export function Careers() {
                                 </p>
                             </div>
 
-                            {/* Botón Apply */}
+                            {/* Botón Apply conectado a WhatsApp */}
                             <div className="mt-auto">
-                                <button className="inline-flex items-center justify-center bg-altum-violeta hover:bg-[#5439c1 ] text-white font-bold py-3.5 px-8 rounded-xl transition-all active:scale-95 gap-3 text-sm group/btn">
+                                <button 
+                                    onClick={() => handleWhatsAppApply(t(job.titleKey))}
+                                    className="inline-flex items-center justify-center bg-altum-violeta hover:bg-[#5439c1] text-white font-bold py-3.5 px-8 rounded-xl transition-all active:scale-95 gap-3 text-sm group/btn"
+                                >
                                     {t('careers.applyNow') || "Apply Now"} 
                                     <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                                 </button>

@@ -49,10 +49,10 @@ export default function History() {
           >
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black">
               <Image
-                src="/images/nuestra-historia-altumia.jpg" 
+                src="/images/nuestrahistoria-altumia.jpg" 
                 alt="Altumia History - Earth from Space"
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 priority
               />

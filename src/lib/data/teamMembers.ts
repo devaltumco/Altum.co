@@ -1,26 +1,38 @@
 export const teamMembers = [
   {
-    id: "elena",
-    name: "Elena Vórtice",
+    id: "Samuel",
+    name: "Samuel Urrego",
     roleKey: "team.elena.role", // Eliminamos el prefijo 'about.'
-    image: "/team/elena.jpg"
+    image: "/images/team/samuel_urrego.jpg"
   },
   {
     id: "aris",
-    name: "Dr. Aris Thorne",
+    name: "Mauricio Niño",
     roleKey: "team.aris.role",
-    image: "/team/aris.jpg"
+    image: "/images/team/mauricio_nino.jpg"
   },
   {
-    id: "sofia",
-    name: "Sofía Reyes",
+    id: "viviene",
+    name: "Viviene Murcia",
     roleKey: "team.sofia.role",
-    image: "/team/sofia.jpg"
+    image: "/images/team/viviene_murcia.jpg"
   },
   {
-    id: "mateo",
-    name: "Mateo Correa",
+    id: "alexander",
+    name: "Alexander Murcia",
     roleKey: "team.mateo.role",
-    image: "/team/mateo.jpg"
+    image: "/images/team/alexander_murcia.jpg"
+  },
+  {
+    id: "Andres",
+    name: "Andres Villamil",
+    roleKey: "team.andres.role",
+    image: "/images/team/andres-villamil.jpg"
+  },
+  {
+    id: "Alexander",
+    name: "Alexander Rivera",
+    roleKey: "team.alexrivera.role",
+    image: "/images/team/alexander-rivera.jpg"
   }
 ];

@@ -1,0 +1,26 @@
+{
+  "Herot": {
+    "industries": {
+      "title": "Industrias que Transformamos",
+      "description": "Nos especializamos en el despliegue de soluciones de IA a medida en diversos sectores, impulsando la eficiencia y la innovación donde más importa.",
+      "finance": "Banca y Finanzas",
+      "retail": "Retail y E-commerce",
+      "manufacturing": "Manufactura",
+      "healthcare": "Salud y Bienestar",
+      "education": "Educación",
+      "logistics": "Logística y Viajes",
+      "legal": "Servicios Legales",
+      "real_estate": "Bienes Raíces",
+      "descriptions": {
+        "finance": "Transformamos la experiencia financiera mediante soluciones de IA que optimizan la gestión de riesgos, automatizan procesos de cumplimiento normativo y personalizan la atención al cliente.",
+        "retail": "Potenciamos las ventas y la experiencia del cliente con IA aplicada a recomendaciones personalizadas, gestión inteligente de inventarios y análisis predictivo de demanda.",
+        "manufacturing": "Impulsamos la industria 4.0 con soluciones de IA que optimizan la cadena de producción, predicen mantenimientos preventivos y mejoran la calidad del producto.",
+        "healthcare": "Revolucionamos el cuidado de la salud con IA que facilita diagnósticos más precisos, personaliza tratamientos y optimiza la gestión hospitalaria.",
+        "education": "Transformamos el aprendizaje con plataformas inteligentes que personalizan la experiencia educativa, identifican áreas de mejora y automatizan tareas administrativas.",
+        "logistics": "Optimizamos operaciones logísticas y experiencias de viaje mediante IA que predice demanda, automatiza rutas de entrega y personaliza servicios turísticos.",
+        "legal": "Modernizamos la práctica legal con IA que automatiza revisión de documentos, análisis de casos y búsqueda de precedentes jurídicos.",
+        "real_estate": "Revolucionamos el mercado inmobiliario con herramientas de IA que valoran propiedades con precisión, predicen tendencias de mercado y personalizan búsquedas para compradores."
+      }
+    }
+  }
+}

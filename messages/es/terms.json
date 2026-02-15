@@ -1,0 +1,160 @@
+{
+  "TermsOfService": {
+    "lastUpdate": "Última actualización: Febrero 12, 2026",
+    "sections": {
+      "1": {
+        "title": "1. Introducción",
+        "content": "Los presentes Términos de Servicio (en adelante, “los Términos”) regulan la relación contractual entre Altumia (en adelante, “Altumia”, “nosotros” o “la Empresa”) y el cliente o usuario (en adelante, “el Cliente” o “usted”) que contrata los servicios tecnológicos ofrecidos por Altumia."
+      },
+      "2": {
+        "title": "2. Objeto del Contrato",
+        "content": "Altumia proporciona servicios y soluciones tecnológicas según lo acordado en cada contrato específico, orden de servicio o propuesta comercial aceptada por el Cliente."
+      },
+      "3": {
+        "title": "3. Aceptación de los Términos",
+        "content": "Al contratar cualquier servicio de Altumia, el Cliente acepta expresamente estos Términos de Servicio. Si actúa en representación de una empresa u organización, declara tener la autoridad necesaria para vincular a dicha entidad."
+      },
+      "4": {
+        "title": "4. Descripción de los Servicios",
+        "subsections": {
+          "4_1": {
+            "title": "4.1 Alcance",
+            "content": "Los servicios específicos, entregables, plazos y precios se detallarán en: Propuestas comerciales, Órdenes de servicio, Contratos específicos y Anexos técnicos."
+          },
+          "4_2": {
+            "title": "4.2 Modificaciones",
+            "content": "Altumia se reserva el derecho de modificar, suspender o discontinuar cualquier aspecto de los servicios, previa notificación al Cliente cuando sea razonablemente posible."
+          }
+        }
+      },
+      "5": {
+        "title": "5. Obligaciones del Cliente",
+        "content": "El Cliente se compromete a:",
+        "items": [
+          "Proporcionar información veraz, completa y actualizada",
+          "Facilitar el acceso necesario a sistemas, datos y personal para la prestación del servicio",
+          "Designar un representante autorizado para la comunicación y toma de decisiones",
+          "Cumplir con los plazos acordados para revisiones y aprobaciones",
+          "Realizar los pagos en los términos establecidos",
+          "Utilizar los servicios conforme a la ley y estos Términos"
+        ]
+      },
+      "6": {
+        "title": "6. Obligaciones de Altumia",
+        "content": "Altumia se compromete a:",
+        "items": [
+          "Prestar los servicios con profesionalismo y estándares de calidad de la industria",
+          "Asignar personal calificado para la ejecución de los servicios",
+          "Mantener la confidencialidad de la información del Cliente",
+          "Informar oportunamente sobre el progreso y cualquier impedimento en la prestación del servicio",
+          "Cumplir con los plazos acordados, salvo causas de fuerza mayor o retrasos atribuibles al Cliente"
+        ]
+      },
+      "7": {
+        "title": "7. Precios y Forma de Pago",
+        "subsections": {
+          "7_1": {
+            "title": "7.1 Precios",
+            "content": "Los precios se establecerán en cada propuesta comercial o contrato específico y se expresarán en pesos colombianos (COP) o dólares estadounidenses (USD) según se acuerde."
+          },
+          "7_2": {
+            "title": "7.2 Facturación",
+            "content": "Altumia emitirá facturas electrónicas conforme a la normativa colombiana vigente."
+          },
+          "7_3": {
+            "title": "7.3 Condiciones de Pago",
+            "items": [
+              "Los pagos se realizarán según el cronograma establecido en cada contrato",
+              "El retraso en el pago puede resultar en la suspensión temporal de los servicios",
+              "Los pagos vencidos generarán intereses moratorios según la tasa máxima legal permitida en Colombia"
+            ]
+          },
+          "7_4": {
+            "title": "7.4 Impuestos",
+            "content": "Todos los precios están sujetos a los impuestos aplicables según la legislación colombiana (IVA, retenciones, etc.)."
+          }
+        }
+      },
+      "8": {
+        "title": "8. Propiedad Intelectual",
+        "subsections": {
+          "8_1": {
+            "title": "8.1 Derechos Preexistentes",
+            "content": "Cada parte conserva todos los derechos sobre su propiedad intelectual preexistente."
+          },
+          "8_2": {
+            "title": "8.2 Desarrollos Nuevos",
+            "content": "Salvo pacto en contrario, los derechos de propiedad intelectual sobre entregables creados específicamente para el Cliente se transferirán al Cliente una vez realizado el pago total. Altumia mantiene el derecho a utilizar metodologías y conocimientos generales."
+          },
+          "8_3": {
+            "title": "8.3 Licencias de Terceros",
+            "content": "Cuando se utilicen componentes o software de terceros, el Cliente deberá cumplir con las licencias correspondientes."
+          }
+        }
+      },
+      "9": {
+        "title": "9. Confidencialidad",
+        "content": "Ambas partes se comprometen a mantener confidencial toda información sensible intercambiada, salvo que sea de dominio público o deba revelarse por mandato legal. Esta obligación permanecerá vigente por tres (3) años después de la terminación."
+      },
+      "10": {
+        "title": "10. Protección de Datos Personales",
+        "content": "Altumia cumple con la Ley 1581 de 2012 y el Decreto 1377 de 2013 sobre protección de datos personales. Para más información, consulte nuestra Política de Privacidad."
+      },
+      "11": {
+        "title": "11. Garantías y Limitaciones",
+        "subsections": {
+          "11_1": {
+            "title": "11.1 Garantía de Servicios",
+            "content": "Altumia garantiza que los servicios se prestarán con el debido cuidado profesional conforme a los estándares de la industria."
+          },
+          "11_2": {
+            "title": "11.2 Limitaciones",
+            "content": "Altumia NO garantiza: resultados comerciales específicos, funcionamiento ininterrumpido o compatibilidad total con sistemas no especificados previamente."
+          },
+          "11_3": {
+            "title": "11.3 Período de Garantía",
+            "content": "Los errores reportados dentro de los treinta (30) días posteriores a la entrega serán corregidos sin costo, siempre que sean atribuibles a Altumia."
+          }
+        }
+      },
+      "12": {
+        "title": "12. Limitación de Responsabilidad",
+        "content": "En la máxima medida permitida por la ley colombiana: La responsabilidad total no excederá el monto pagado en los últimos 6 meses. Altumia no será responsable por lucro cesante o pérdida de datos."
+      },
+      "13": {
+        "title": "13. Fuerza Mayor",
+        "content": "Ninguna parte será responsable por incumplimientos causados por eventos fuera de su control razonable, incluyendo desastres naturales, actos de autoridad o fallas de infraestructura."
+      },
+      "14": {
+        "title": "14. Vigencia y Terminación",
+        "subsections": {
+          "14_1": { "title": "14.1 Vigencia", "content": "Los contratos tendrán la vigencia especificada en cada acuerdo particular." },
+          "14_2": { "title": "14.2 Incumplimiento", "content": "Se podrá terminar el contrato si la otra parte incumple y no subsana en quince (15) días." },
+          "14_3": { "title": "14.3 Conveniencia", "content": "El Cliente podrá terminar el contrato con treinta (30) días de anticipación, pagando los servicios prestados." },
+          "14_4": { "title": "14.4 Efectos", "items": ["Pago de montos adeudados", "Entrega de trabajos completados", "Vigencia de confidencialidad"] }
+        }
+      },
+      "15": {
+        "title": "15. Modificaciones",
+        "content": "Altumia podrá modificar estos Términos notificando al Cliente con treinta (30) días de anticipación. El uso continuado constituye aceptación."
+      },
+      "16": {
+        "title": "16. Ley Aplicable y Resolución de Disputas",
+        "content": "Estos Términos se rigen por las leyes de Colombia. Las disputas no resueltas en 30 días se someterán a los tribunales competentes de Colombia."
+      },
+      "17": {
+        "title": "17. Disposiciones Generales",
+        "items": [
+          "Integridad: Estos Términos y los contratos específicos constituyen el acuerdo completo.",
+          "Cesión: El Cliente no podrá ceder sus derechos sin consentimiento escrito.",
+          "Notificaciones: Se realizarán por escrito a las direcciones proporcionadas."
+        ]
+      },
+      "18": {
+        "title": "18. Contacto",
+        "content": "Para consultas sobre estos Términos:\nAltumia\nSitio web: altumia.co\nEmail: service@altumia.co"
+      }
+    },
+    "acceptance": "Al contratar los servicios de Altumia, usted acepta estos Términos de Servicio en su totalidad."
+  }
+}

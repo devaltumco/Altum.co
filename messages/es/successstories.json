@@ -1,0 +1,83 @@
+{
+  "Herot": {
+    "caseStudies": {
+      "title": "Resultados Reales, Impacto Medible",
+      "description": "Descubre cómo hemos ayudado a empresas como la tuya a innovar y crecer con Inteligencia Artificial aplicada.",
+      "filterIndustry": "Filtrar por industria",
+      "filterCountry": "Filtrar por país",
+      "allIndustries": "Todas las Industrias",
+      "allCountries": "Todos los Países",
+      "noResults": "Ningún caso de éxito coincide con tus filtros actuales.",
+      "studies": {
+        "0": {
+          "title": "Scoring de Crédito con IA para Fintech Mexicana",
+          "summary": "Desarrollamos un modelo de machine learning que redujo las tasas de impago.",
+          "results": {
+            "0": { "value": "30%", "label": "de reducción en la mora de créditos." },
+            "1": { "value": "20%", "label": "de aumento en el alcance de mercado." }
+          }
+        },
+        "1": {
+          "title": "Optimización de Gestión Hospitalaria en Colombia",
+          "summary": "Implementación de un sistema de predicción de flujo de pacientes.",
+          "results": {
+            "0": { "value": "40%", "label": "de reducción en tiempos de espera." },
+            "1": { "value": "15%", "label": "de mejora en la eficiencia de camas." }
+          }
+        },
+        "2": {
+          "title": "Personalización de E-commerce en Canadá",
+          "summary": "Motor de recomendación en tiempo real que aumentó la fidelidad.",
+          "results": {
+            "0": { "value": "25%", "label": "de incremento en el valor de orden." },
+            "1": { "value": "18%", "label": "de crecimiento en la retención." }
+          }
+        },
+        "3": {
+          "title": "Mantenimiento Predictivo en Manufactura LATAM",
+          "summary": "Sistema para predecir fallas en maquinaria usando sensores IoT.",
+          "results": {
+            "0": { "value": "70%", "label": "de reducción en inactividad." },
+            "1": { "value": "20%", "label": "de ahorro en mantenimiento." }
+          }
+        },
+        "4": {
+          "title": "Optimización de la Red Eléctrica en Colombia",
+          "summary": "Modelo de IA para predecir la demanda energética y optimizar la red.",
+          "results": {
+            "0": { "value": "95%", "label": "de precisión en la predicción." },
+            "1": { "value": "10%", "label": "de reducción en pérdidas." }
+          }
+        },
+        "5": {
+          "title": "Agricultura Inteligente en Centroamérica",
+          "summary": "Detección temprana de plagas en cafetales mediante visión artificial.",
+          "results": {
+            "0": { "value": "30%", "label": "de aumento en el rendimiento." },
+            "1": { "value": "90%", "label": "de precisión en detección." }
+          }
+        }
+      }
+    },
+    "countries": {
+      "canada": "Canadá",
+      "mexico": "México",
+      "colombia": "Colombia",
+      "central_america": "Centroamérica",
+      "latam": "LATAM"
+    },
+    "industries": {
+      "finance": "Finanzas y Banca",
+      "healthcare": "Salud y Medicina",
+      "retail": "Retail y E-commerce",
+      "manufacturing": "Manufactura Industrial",
+      "energy": "Energía y Utilidades",
+      "agribusiness": "Agroindustria",
+      "education": "Educación",
+      "logistics": "Logística y Transporte",
+      "legal": "Servicios Legales",
+      "real_estate": "Bienes Raíces",
+      "insurance": "Seguros"
+    }
+  }
+}
