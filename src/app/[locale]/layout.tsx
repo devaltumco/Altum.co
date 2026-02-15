@@ -79,8 +79,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     },
     "sameAs": [
       "https://www.facebook.com/altumia.co",
-      "https://www.instagram.com/altumia.co",
-      "https://www.linkedin.com/company/altumia-col"
+      "https://www.instagram.com/altumia.co?igsh=MTl6ZTFtdmd5Mzh2eg==",
     ]
   };
 
@@ -102,7 +101,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 {/* scritp google tagmanager
     <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-WLNSZFWN"
+            src="https://www.googletagmanager.com/"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}

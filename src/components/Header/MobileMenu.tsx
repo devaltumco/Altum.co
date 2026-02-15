@@ -4,7 +4,7 @@ import { motion, Variants } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import { Instagram,Facebook, X } from "lucide-react";
+import { Instagram, Facebook, X } from "lucide-react";
 import Link from 'next/link';
 
 interface MobileMenuProps {
@@ -22,10 +22,12 @@ const menuVariants: Variants = {
     transition: { ease: "easeInOut", duration: 0.3 } 
   }
 };
+
 const socialLinks = {
-     Facebook: "https://altumia.co",
-    instagram: "https://www.instagram.com/altumia.co?igsh=MTl6ZTFtdmd5Mzh2eg=="
-  };
+  Facebook: "https://altumia.co",
+  instagram: "https://www.instagram.com/altumia.co?igsh=MTl6ZTFtdmd5Mzh2eg=="
+};
+
 export default function MobileMenu({ closeMenu }: MobileMenuProps) {
   // Utilizamos la misma base "Index" que manejas en el escritorio
   const t = useTranslations("Index");
@@ -57,18 +59,17 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
       >
         <div className="flex items-center justify-between mb-10">
           <div className="flex items-center gap-2">
-            {/* Contenedor del Logo */}
-            <div className="w-[140px] h-[50px] relative">
-          <Link className="" href="/">
-              <Image 
-                src="/logo_altum.svg" 
-                alt="Altum IA Design Logo" 
-                fill 
-                priority
-                className="object-contain object-left" 
-              />
-                        </Link>
-              
+            {/* Contenedor del Logo con funcionalidad de cierre */}
+            <div className="w-[140px] h-[50px] relative cursor-pointer">
+              <div onClick={() => handleNavigation('/')}>
+                <Image 
+                  src="/logo_altum.svg" 
+                  alt="Altum IA Design Logo" 
+                  fill 
+                  priority
+                  className="object-contain object-left" 
+                />
+              </div>
             </div>
           </div>
           <button onClick={closeMenu} className="text-white/70 hover:text-white">
@@ -77,8 +78,8 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
         </div>
 
         <nav className="flex flex-col gap-1">
-          {/* Mapeamos las llaves exactas que usas en DesktopNav: home, services, about, contact */}
-          {['about-us', 'solutions', 'industries-altumia', 'succes', 'blog','careers'].map((key, index) => (
+          {/* Mapeamos las llaves exactas que usas en DesktopNav */}
+          {['about-us', 'solutions', 'industries-altumia', 'success-stories', 'blog','careers'].map((key, index) => (
             <button
               key={`${key}-${index}`}
               onClick={() => handleNavigation(key === 'home' ? '/' : `/${key}`)}

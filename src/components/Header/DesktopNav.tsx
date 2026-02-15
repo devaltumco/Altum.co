@@ -41,7 +41,7 @@ export default function DesktopNav({ sticky }: { sticky: boolean }) {
         <Link 
           href="/success-stories" 
           className={linkStyle}
-          >{t("succes")}
+          >{t("success-stories")}
         </Link>
          <Link 
           href="/blog" 
