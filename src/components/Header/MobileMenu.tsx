@@ -4,7 +4,7 @@ import { motion, Variants } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import { Instagram, Linkedin, Twitter, X } from "lucide-react";
+import { Instagram,Facebook, X } from "lucide-react";
 import Link from 'next/link';
 
 interface MobileMenuProps {
@@ -23,9 +23,8 @@ const menuVariants: Variants = {
   }
 };
 const socialLinks = {
-    linkedin: "https://linkedin.com/company/altum-ia",
-    twitter: "https://twitter.com/altumia",
-    instagram: "https://instagram.com/altumia.design"
+     Facebook: "https://altumia.co",
+    instagram: "https://www.instagram.com/altumia.co?igsh=MTl6ZTFtdmd5Mzh2eg=="
   };
 export default function MobileMenu({ closeMenu }: MobileMenuProps) {
   // Utilizamos la misma base "Index" que manejas en el escritorio
@@ -91,12 +90,10 @@ export default function MobileMenu({ closeMenu }: MobileMenuProps) {
         <div className="mt-auto pt-6 border-t border-white/5 space-y-6">
             <div className="flex flex-col gap-4">
               <div className="flex gap-8 w-full">
-                <Link href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-5 h-5 text-slate-400 hover:text-altum-violeta transition-all duration-300 transform hover:scale-110" />
+                <Link href={socialLinks.Facebook} target="_blank" rel="noopener noreferrer">
+                  <Facebook className="w-5 h-5 text-slate-400 hover:text-altum-violeta transition-all duration-300 transform hover:scale-110" />
                 </Link>
-                <Link href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-                  <Twitter className="w-5 h-5 text-slate-400 hover:text-altum-aqua transition-all duration-300 transform hover:scale-110" />
-                </Link>
+                
                 <Link href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-5 h-5 text-slate-400 hover:text-altum-violeta transition-all duration-300 transform hover:scale-110" />
                 </Link>

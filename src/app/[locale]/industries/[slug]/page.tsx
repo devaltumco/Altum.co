@@ -3,7 +3,7 @@
 import { industries } from "@/lib/data/industrias";
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion"; //
-import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight, Sparkles } from "lucide-react";
+import { CheckCircle2, MessageSquare, HelpCircle, ArrowRight, Sparkles, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 // ✅ Definimos la interfaz de params correctamente
@@ -32,6 +32,16 @@ export default function IndustryPage({ params }: PageProps) {
   const industry = industries.find(i => i.slug.en === slug || i.slug.es === slug);
 
   if (!industry) notFound();
+
+  // Función para manejar el contacto por WhatsApp
+  const handleWhatsApp = () => {
+    const phoneNumber = "573207408391";
+    const message = isEs 
+      ? `Hola AltumIA, me gustaría agendar una consultoría sobre IA para el sector de ${industry.name.es}.` 
+      : `Hello AltumIA, I would like to schedule a consultancy about AI for the ${industry.name.en} sector.`;
+    
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
+  };
 
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
@@ -123,17 +133,47 @@ export default function IndustryPage({ params }: PageProps) {
       </section>
 
       {/* 5. CTA GLOBAL */}
-      <section className="py-40 px-6 font-sans">
-        <div className="max-w-6xl mx-auto bg-gradient-to-br from-[#5D3FD3] to-[#1a1a1a] rounded-[3rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl shadow-[#5D3FD3]/20">
-          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 mix-blend-overlay" />
-          <div className="relative z-10">
-            <h2 className="text-5xl md:text-7xl font-bold mb-10 tracking-tighter">
-              {isEs ? 'Lidera tu sector con IA' : 'Lead your industry with AI'}
-            </h2>
-            <button className="bg-[#3AF2CE] text-black px-12 py-5 rounded-full font-bold text-lg flex items-center gap-3 mx-auto hover:scale-105 transition-transform">
-              {isEs ? 'Contactar un experto' : 'Contact an expert'}
-              <ArrowRight size={22} />
-            </button>
+   <section className="py-40 px-6 font-sans relative">
+        <div className="max-w-6xl mx-auto group relative">
+          {/* Borde brillante sutil (Glow effect) */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#5D3FD3] to-[#3AF2CE] rounded-[3.5rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+          
+          <div className="relative bg-black rounded-[3rem] p-12 md:p-24 text-center overflow-hidden border border-white/10 shadow-2xl">
+            
+            {/* Degradado de fondo interno */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#5D3FD3]/20 via-black to-black z-0" />
+            
+            {/* Patrón de Grid y formas geométricas */}
+            <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20 mix-blend-overlay z-0" />
+            <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#3AF2CE]/10 rounded-full blur-[80px]" />
+            <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-[#5D3FD3]/20 rounded-full blur-[80px]" />
+
+            <div className="relative z-10">
+              <span className="text-[#3AF2CE] font-bold tracking-[0.3em] uppercase text-xs mb-6 block">
+                {isEs ? 'Transformación Real' : 'Real Transformation'}
+              </span>
+              
+              <h2 className="text-5xl md:text-8xl font-bold mb-12 tracking-tighter leading-none bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50">
+                {isEs ? 'Lidera tu sector con IA' : 'Lead your industry with AI'}
+              </h2>
+
+              <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                <button 
+                  onClick={handleWhatsApp}
+                  className="bg-[#3AF2CE] text-black px-12 py-3 rounded-xl font-bold text-lg flex items-center gap-3 hover:scale-105 hover:shadow-[0_0_30px_rgba(58,242,206,0.3)] transition-all duration-300 group/btn"
+                >
+                  <MessageCircle size={20} className="fill-current" />
+                  {isEs ? 'Contactar un experto' : 'Contact an expert'}
+                  <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+              </div>
+              
+              <p className="mt-8 text-white/40 text-sm font-light italic">
+                {isEs 
+                  ? 'Respuesta inmediata por nuestro equipo de ingeniería.' 
+                  : 'Immediate response by our engineering team.'}
+              </p>
+            </div>
           </div>
         </div>
       </section>

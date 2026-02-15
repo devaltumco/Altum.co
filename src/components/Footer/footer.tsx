@@ -4,8 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { 
-  Linkedin, 
-  Twitter, 
+  Facebook, 
   Instagram, 
 } from "lucide-react";
 
@@ -14,9 +13,8 @@ export default function Footer() {
 
   // URLs de las redes sociales de Altum 
   const socialLinks = {
-    linkedin: "https://linkedin.com/company/altum-ia",
-    twitter: "https://twitter.com/altumia",
-    instagram: "https://instagram.com/altumia.design"
+    Facebook: "https://altumia.co",
+    instagram: "https://www.instagram.com/altumia.co?igsh=MTl6ZTFtdmd5Mzh2eg=="
   };
 
   // Mapeo de claves de traducción a rutas reales
@@ -53,12 +51,10 @@ export default function Footer() {
             
             <div className="flex flex-col gap-4">
               <div className="flex gap-8 w-full">
-                <Link href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-5 h-5 text-slate-400 hover:text-altum-violeta transition-all duration-300 transform hover:scale-110" />
+                <Link href={socialLinks.Facebook} target="_blank" rel="noopener noreferrer">
+                  <Facebook className="w-5 h-5 text-slate-400 hover:text-altum-violeta transition-all duration-300 transform hover:scale-110" />
                 </Link>
-                <Link href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-                  <Twitter className="w-5 h-5 text-slate-400 hover:text-altum-aqua transition-all duration-300 transform hover:scale-110" />
-                </Link>
+                
                 <Link href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-5 h-5 text-slate-400 hover:text-altum-violeta transition-all duration-300 transform hover:scale-110" />
                 </Link>

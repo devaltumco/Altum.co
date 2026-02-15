@@ -15,7 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   let t;
   try {
-    t = await getTranslations({ locale, namespace: "MetadataSolutions" });
+    t = await getTranslations({ locale, namespace: "MetadataTerms" });
   } catch (error) {
     console.error("Error loading SEO translations:", error);
   }

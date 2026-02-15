@@ -35,7 +35,16 @@
     "description": "Learn about AltumIA, a leading technology firm specializing in responsible AI and custom software. Based in Canada, Mexico, and Colombia, we build the future of intelligent business.",
     "keywords": "about AltumIA, AI leadership, software development team, technology consultants, AI mission and values, tech expertise Americas, responsible AI company"
   },
-
+  "MetadataTerms": {
+    "title": "Términos del Servicio | Marco Legal | AltumIA",
+    "description": "Consulta nuestros Términos de Servicio y el marco legal que regula la prestación de servicios de IA y desarrollo de software en Colombia, México y Canadá.",
+    "keywords": "términos de servicio AltumIA, condiciones legales, contrato desarrollo software, términos servicios IA, obligaciones contractuales, aviso legal AltumIA"
+  },
+  "MetadataPrivacy": {
+    "title": "Política de Privacidad | Protección de Datos | AltumIA",
+    "description": "Conoce cómo AltumIA protege y gestiona tus datos personales. Consulta nuestra política de tratamiento de datos para Colombia, México y Canadá.",
+    "keywords": "política de privacidad AltumIA, protección de datos personales, Ley 1581 de 2012, privacidad de datos México, seguridad de la información, tratamiento de datos IA"
+  },
   "Index": {
     "boilerplateName": "Altum",
     "aboutus": "Sobre Nosotros",
@@ -48,7 +57,8 @@
     "industriesTitle": "Sugerencias de Industrias",
     "noResults": "No se encontraron industrias.",
     "close": "Cerrar",
-    "view": "Ver"
+    "view": "Ver",
+    "industries-altumia": "industrias"
   },
   "languageSwitcher": {
     "selectLanguageHeading": "Seleccionar Idioma",

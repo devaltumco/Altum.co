@@ -1,0 +1,12 @@
+# robots.txt para Zipaquira Digital
+# Permite que todos los motores de búsqueda rastreen el sitio
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://altumia.co/sitemap.xml
+
+# Host principal
+Host: https://altumia.co
+

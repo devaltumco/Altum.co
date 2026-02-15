@@ -35,11 +35,22 @@
     "description": "Artículos sobre implementación de IA responsable, Machine Learning y Automatización. Transformamos industrias en Colombia, México y Canadá con soluciones tecnológicas de vanguardia.",
     "keywords": "desarrollo de software, inteligencia artificial, machine learning, automatización inteligente, IA responsable, consultoría de datos, soluciones cloud, desarrollo web moderno."
   },
+  "MetadataTerms": {
+    "title": "Terms of Service | Legal Framework | AltumIA",
+    "description": "Read our Terms of Service to understand the legal framework governing our AI and software development services across Canada, Mexico, and Colombia.",
+    "keywords": "AltumIA terms of service, legal agreement, software development contract, AI services terms, service obligations, legal notice, tech service conditions"
+  },
+  "MetadataPrivacy": {
+    "title": "Privacy Policy | Data Protection & Compliance | AltumIA",
+    "description": "Learn how AltumIA protects and manages your personal data. Our privacy policy ensures transparency and security for our clients in Canada, Mexico, and Colombia.",
+    "keywords": "AltumIA privacy policy, data protection, GDPR compliance Colombia, privacy rights Mexico, personal data safety Canada, data handling AI, secure software development"
+  },
   "Index": {
     "boilerplateName": "Altum",
     "aboutus": "About As",
     "solutions": "Solutions",
     "industries": "Industries",
+     "industries-altumia": "industries",
     "succes": "Success Stories",
     "careers": "Careers",
     "blog": "Blog",
