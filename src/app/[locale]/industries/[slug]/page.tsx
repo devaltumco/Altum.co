@@ -35,7 +35,7 @@ export default function IndustryPage({ params }: PageProps) {
 
   // Función para manejar el contacto por WhatsApp
   const handleWhatsApp = () => {
-    const phoneNumber = "573207408391";
+    const phoneNumber = "573155870958";
     const message = isEs 
       ? `Hola AltumIA, me gustaría agendar una consultoría sobre IA para el sector de ${industry.name.es}.` 
       : `Hello AltumIA, I would like to schedule a consultancy about AI for the ${industry.name.en} sector.`;

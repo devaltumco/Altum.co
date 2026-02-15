@@ -30,7 +30,7 @@ export const teamMembers = [
     image: "/images/team/andres-villamil.jpg"
   },
   {
-    id: "Alexander_r",
+    id: "Alex",
     name: "Alexander Rivera",
     roleKey: "team.alexrivera.role",
     image: "/images/team/alexander-rivera.jpg"
