@@ -255,7 +255,13 @@ export function ChatBot() {
                 )}
                 <div className="border-t border-white/5 p-4 bg-[#111]">
                   <form onSubmit={(e) => { e.preventDefault(); sendMessage(input); }} className="flex gap-2">
-                    <input value={input} onChange={(e) => setInput(e.target.value)} placeholder={t('placeholder')} className="flex-1 bg-[#1a1a1a] border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-[#5D3FD3]/50 transition-all" disabled={isLoading} />
+                    <input 
+                      value={input} 
+                      onChange={(e) => setInput(e.target.value)} 
+                      placeholder={t('placeholder')} 
+                      className="flex-1 bg-[#1a1a1a] border border-white/10 rounded-xl px-4 py-2.5 text-base md:text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-[#5D3FD3]/50 transition-all" 
+                      disabled={isLoading} 
+                    />
                     <button type="submit" disabled={isLoading || !input.trim()} className="bg-altum-violeta hover:bg-[#4c32b3] text-white p-2.5 rounded-xl disabled:opacity-30 disabled:hover:bg-altum-violeta transition-all flex items-center justify-center active:scale-90"><Send size={16} /></button>
                   </form>
                 </div>
@@ -265,7 +271,7 @@ export function ChatBot() {
         )}
       </AnimatePresence>
 
-      <button onClick={toggleContainer} className="fixed bottom-6 right-6 w-14 h-14   bg-altum-violeta text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all duration-300 group z-[10000] border border-white/10">
+      <button onClick={toggleContainer} className="fixed bottom-6 right-6 w-14 h-14 bg-altum-violeta text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 active:scale-90 transition-all duration-300 group z-[10000] border border-white/10">
         <AnimatePresence mode="wait">
           {isOpen ? (
             <motion.div key="close" initial={{ opacity: 0, rotate: -90 }} animate={{ opacity: 1, rotate: 0 }} exit={{ opacity: 0, rotate: 90 }}><X className="h-5 w-5 sm:h-5 sm:w-5" /></motion.div>
