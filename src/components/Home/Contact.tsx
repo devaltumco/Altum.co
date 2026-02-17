@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useTranslations } from "next-intl";
-import { handleContact } from "@/app/actions";
 import { Loader2 } from "lucide-react";
 import { useState } from "react";
 
@@ -12,31 +11,48 @@ export function Contact() {
   const t = useTranslations("Herot.contact");
   const [status, setStatus] = useState<{type: 'success' | 'error', msg: string} | null>(null);
 
+  // 1. Esquema Zod (mantenemos la lógica de validación)
   const formSchema = z.object({
     name: z.string().min(2, t('errors.name')),
     email: z.string().email(t('errors.email')),
     company: z.string().optional(),
     message: z.string().min(10, t('errors.message')),
+    website: z.string().optional(), // 👈 Campo para el Honeypot
   });
 
-  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema)
+  type FormData = z.infer<typeof formSchema>;
+
+  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: { website: "" } // Aseguramos que inicie vacío
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  // 2. Nueva función onSubmit usando fetch hacia tu API Blindada
+  async function onSubmit(values: FormData) {
     setStatus(null);
-    const result = await handleContact(values);
     
-    if (result.success) {
-      setStatus({ type: 'success', msg: t('successMsg') });
-      reset();
-    } else {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        setStatus({ type: 'success', msg: t('successMsg') });
+        reset();
+      } else {
+        throw new Error(result.error || "Error");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
       setStatus({ type: 'error', msg: t('errorMsg') });
     }
   }
 
-  // Modificado: text-base (16px) para evitar zoom en móvil y clases de autofill corregidas
-  const inputClasses = "w-full bg-[#111] border border-white/10 rounded-lg px-4 py-2.5 text-base md:text-sm text-white outline-none transition-all placeholder:text-gray-600 focus:border-[#3AF2CE] focus:ring-1 focus:ring-[#3AF2CE]/30 [-webkit-text-fill-color:white] [transition:background-color_5000s_ease-in-out_0s]";
+  const inputClasses = "w-full bg-[#111] border border-white/10 rounded-lg px-4 py-2.5 text-base md:text-sm text-white outline-none transition-all placeholder:text-gray-600 focus:border-[#3AF2CE] focus:ring-1 focus:ring-[#3AF2CE]/30 [-webkit-text-fill-color:white]";
 
   return (
     <section className="py-24 bg-[#0a0a0a] text-white">
@@ -53,6 +69,17 @@ export function Contact() {
 
         <div className="max-w-2xl mx-auto">
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+            
+            {/* 3. HONEYPOT: Campo invisible para humanos */}
+            <div className="hidden" aria-hidden="true">
+              <input 
+                type="text" 
+                {...register("website")} 
+                tabIndex={-1} 
+                autoComplete="off" 
+              />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="space-y-1.5">
                 <label className="text-xs font-semibold uppercase tracking-wider text-gray-500 ml-1">
@@ -107,7 +134,7 @@ export function Contact() {
             </div>
 
             {status && (
-              <div className={`p-3 rounded-lg text-center text-xs font-bold ${status.type === 'success' ? 'bg-emerald-500/10 text-altum-aqua' : 'bg-red-500/10 text-red-400'}`}>
+              <div className={`p-3 rounded-lg text-center text-xs font-bold ${status.type === 'success' ? 'bg-emerald-500/10 text-[#3AF2CE]' : 'bg-red-500/10 text-red-400'}`}>
                 {status.msg}
               </div>
             )}
@@ -116,28 +143,21 @@ export function Contact() {
               <button 
                 type="submit" 
                 disabled={isSubmitting} 
-                className="bg-altum-violeta hover:bg-[#5439c1] text-white text-sm font-bold py-3 px-10 rounded-lg transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(93,81,232,0.2)] active:scale-95"
+                className="bg-[#5d51e8] hover:bg-[#5439c1] text-white text-sm font-bold py-3 px-10 rounded-lg transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(93,81,232,0.2)] active:scale-95 disabled:opacity-50"
               >
-                {isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
-                {t('submitBtn')}
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    <span>{t('sending') || '...'}</span>
+                  </>
+                ) : (
+                  t('submitBtn')
+                )}
               </button>
             </div>
           </form>
         </div>
       </div>
-
-      <style jsx global>{`
-        input:-webkit-autofill,
-        input:-webkit-autofill:hover, 
-        input:-webkit-autofill:focus,
-        textarea:-webkit-autofill,
-        textarea:-webkit-autofill:hover,
-        textarea:-webkit-autofill:focus {
-          -webkit-text-fill-color: white !important;
-          -webkit-box-shadow: 0 0 0px 1000px #111 inset !important;
-          transition: background-color 5000s ease-in-out 0s !important;
-        }
-      `}</style>
     </section>
   );
 }
