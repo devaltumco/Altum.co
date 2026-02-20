@@ -1,12 +1,20 @@
-# robots.txt para Zipaquira Digital
-# Permite que todos los motores de búsqueda rastreen el sitio
-
+# Robots.txt para Altumia.co
 User-agent: *
 Allow: /
 
-# Sitemap
+# Bloquear rutas administrativas o privadas (si las tienes)
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap oficial
 Sitemap: https://altumia.co/sitemap.xml
 
-# Host principal
-Host: https://altumia.co
+# Directiva para evitar el entrenamiento de IA (Formato compatible)
+User-agent: GPTBot
+Disallow: /
 
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /

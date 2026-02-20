@@ -52,7 +52,17 @@ export function Contact() {
     }
   }
 
-  const inputClasses = "w-full bg-[#111] border border-white/10 rounded-lg px-4 py-2.5 text-base md:text-sm text-white outline-none transition-all placeholder:text-gray-600 focus:border-[#3AF2CE] focus:ring-1 focus:ring-[#3AF2CE]/30 [-webkit-text-fill-color:white]";
+  // MODIFICACIÓN: Clases optimizadas para controlar el autocompletado y el placeholder
+  const inputClasses = `
+    w-full bg-[#111] border border-white/10 rounded-lg px-4 py-2.5 
+    text-base md:text-sm text-white outline-none transition-all 
+    placeholder:text-gray-600 focus:border-[#3AF2CE] focus:ring-1 focus:ring-[#3AF2CE]/30 
+    
+    /* Previene el cambio de color de fondo al autocompletar */
+    [&-webkit-autofill]:[WebkitBoxShadow:0_0_0px_1000px_#111_inset]
+    [&-webkit-autofill]:[WebkitTextFillColor:white]
+    [&-webkit-autofill]:[transition:background-color_5000s_ease-in-out_0s]
+  `;
 
   return (
     <section className="py-24 bg-[#0a0a0a] text-white">
@@ -158,6 +168,31 @@ export function Contact() {
           </form>
         </div>
       </div>
+
+      {/* BLOQUE DE ESTILOS GLOBALES: Esto asegura que el autocompletado no arruine el diseño */}
+      <style jsx global>{`
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus {
+          -webkit-text-fill-color: white !important;
+          -webkit-box-shadow: 0 0 0px 1000px #111 inset !important;
+          transition: background-color 5000s ease-in-out 0s !important;
+          caret-color: white !important;
+        }
+
+        /* Mejora la visibilidad del cursor y el placeholder al enfocar */
+        input::placeholder, textarea::placeholder {
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+
+        input:focus::placeholder, textarea:focus::placeholder {
+          opacity: 0.5;
+        }
+      `}</style>
     </section>
   );
 }

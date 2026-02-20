@@ -1,16 +1,6 @@
 export const teamMembers = [
-  {
-    id: "Samuel",
-    name: "Samuel Urrego",
-    roleKey: "team.elena.role", // Eliminamos el prefijo 'about.'
-    image: "/images/team/samuel_urregof.jpg"
-  },
-  {
-    id: "aris",
-    name: "Mauricio Niño",
-    roleKey: "team.aris.role",
-    image: "/images/team/mauricio_ninof.jpg"
-  },
+ 
+  
   {
     id: "viviene",
     name: "Viviene Murcia",

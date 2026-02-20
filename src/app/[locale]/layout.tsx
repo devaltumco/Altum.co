@@ -51,7 +51,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       "addressLocality": "Bogota",
       "addressRegion": "Cundinamarca",
       "postalCode": "250252",
-      "addressCountry": "CO"
+      "addressCountry": "CO",
+      "Desarrollo":"Zipaquiradigital.com"
     },
     "geo": { 
       "@type": "GeoCoordinates",
