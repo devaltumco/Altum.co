@@ -1,15 +1,8 @@
-# Robots.txt para Altumia.co
 User-agent: *
 Allow: /
-
-# Bloquear rutas administrativas o privadas (si las tienes)
 Disallow: /api/
 Disallow: /admin/
 
-# Sitemap oficial
-Sitemap: https://altumia.co/sitemap.xml
-
-# Directiva para evitar el entrenamiento de IA (Formato compatible)
 User-agent: GPTBot
 Disallow: /
 
@@ -18,3 +11,5 @@ Disallow: /
 
 User-agent: Google-Extended
 Disallow: /
+
+Sitemap: https://altumia.co/sitemap.xml
