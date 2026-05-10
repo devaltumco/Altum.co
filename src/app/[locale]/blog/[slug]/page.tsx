@@ -217,14 +217,14 @@ export default async function PostPage({ params }: Props) {
     };
   }) || [];
   
-  const currentUrl = `https://zipaquiradigital.com/${locale}/blog/${slug}`;
+  const currentUrl = `https://altumia.co/${locale}/blog/${slug}`;
   const spotifyEmbed = post.podcastUrl ? getSpotifyEmbedUrl(post.podcastUrl) : null;
 
   return (
     <div className="bg-[#000000] min-h-screen font-sans pt-20 text-[#D7D7D7]">
       
       {/* HEADER HERO */}
-      <div className="container mx-auto px-4 max-w-5xl pt-12 pb-6">
+      <div className="container mx-auto px-4 max-w-6xl pt-12 pb-6">
         <div className="flex flex-wrap items-center gap-4 text-sm font-bold tracking-wide uppercase text-[#D7D7D7] mb-6">
           <span className="bg-[#262626] text-[#3AF2CE] px-3 py-1 rounded-full text-xs border border-[#3AF2CE]/20">{post.category || 'Blog'}</span>
           <span className="text-[#262626]">•</span>
@@ -250,8 +250,8 @@ export default async function PostPage({ params }: Props) {
         />
       </div>
 
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className=" mx-auto px-4 py-8 max-w-4xl">
+        <div className=" ">
           
           <main className="lg:col-span-8">
             {post.mainImage && (

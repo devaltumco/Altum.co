@@ -19,6 +19,8 @@ interface Post {
 interface Props {
   posts: Post[];
   locale: string;
+    isHome?: boolean; // ✅ Esto soluciona el error de TypeScript
+
 }
 
 export default function BlogIndex({ posts, locale }: Props) {

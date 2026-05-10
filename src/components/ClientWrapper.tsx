@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { ReactNode } from 'react';
 import { NextIntlClientProvider, AbstractIntlMessages } from 'next-intl';
+import { LazyMotion, domAnimation } from 'framer-motion';
 import { ChatBot } from './ChatAltumia';
 
 
@@ -19,13 +20,17 @@ interface Props {
 export default function ClientWrapper({ children, locale, messages }: Props) {
   return (
       <NextIntlClientProvider locale={locale} messages={messages} timeZone="America/Bogota">
+                <LazyMotion features={domAnimation}> 
+
           <Header />
           <main className="flex-grow w-full relative">
             {children}
           </main> 
           <ChatBot/>
-          <Footer />
           
+          <Footer />
+                  </LazyMotion>
+
       </NextIntlClientProvider>
   );
 }

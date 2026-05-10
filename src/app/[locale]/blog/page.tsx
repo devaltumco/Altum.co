@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Blog Altum" };
   }
 
-  const base = new URL("http://localhost:3002");
+  const base = new URL("https://altumia.co");
   const canonicalUrl = locale === "es" 
     ? new URL("/blog", base).toString() 
     : new URL("/en/blog", base).toString();

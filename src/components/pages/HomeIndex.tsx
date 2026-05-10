@@ -9,8 +9,19 @@ import ResponsibleAI from "@/components/Home/ResponsibleAI";
 import Blog from "@/components/Home/Blog";
 import { Careers } from "../Home/Careers";
 import { Contact } from "../Home/Contact";
+import { useEffect } from "react";
 
-export default function HomeIndex() {
+// ✅ Recibe un ReactNode, no un array de datos
+interface HomeIndexProps {
+  blogSection: React.ReactNode; 
+}
+
+export default function HomeIndex({ blogSection }: HomeIndexProps) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const resetEvent = new Event("resetSection");
+    window.dispatchEvent(resetEvent);
+  }, []);
   return (
     <div className="w-full max-w-[1400px] mx-auto mt-16 lg:mt-20">
       <HeroSection />
@@ -27,7 +38,8 @@ export default function HomeIndex() {
       </div>
       <Partners />
       <ResponsibleAI />
-      <Blog />
+           {blogSection}
+
       <Careers />
       <Contact />
     </div>
